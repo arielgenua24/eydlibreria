@@ -1,3 +1,8 @@
-let array: string[] = ['ariel','nina'];
+import {user} from './user';
 
-console.log(array)
+let event = (param:string):void => {
+    const userBase = new user('ariel', ['']);
+    userBase.userPleasures(param);
+}
+
+event('emprendimiento');
