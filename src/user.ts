@@ -9,7 +9,7 @@ export class user {
     this.pleasures = pleasures;
     }
 
-    userPleasures(pleasures: string){
+    newUserPleasures(pleasures: string){
         this.pleasures.push(pleasures);
         console.log(`A el usuario: ${this._name}, le gusta ${pleasures} `)
 
