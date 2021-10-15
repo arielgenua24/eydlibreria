@@ -6,7 +6,7 @@ var user = /** @class */ (function () {
         this._name = name;
         this.pleasures = pleasures;
     }
-    user.prototype.userPleasures = function (pleasures) {
+    user.prototype.newUserPleasures = function (pleasures) {
         this.pleasures.push(pleasures);
         console.log("A el usuario: " + this._name + ", le gusta " + pleasures + " ");
     };
