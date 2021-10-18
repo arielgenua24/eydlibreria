@@ -5,8 +5,11 @@ jobs = {
 }
 
 const arrayRecomendations = [];
+const arrayPeopleSelected = [];
+
 
 function userChoicesRecomendations(){
+
     
     const fatherNode = document.querySelector('.section_div__people')
     const jobsRecomendations = document.querySelector('#button_jobs');
@@ -27,40 +30,52 @@ function userChoicesRecomendations(){
 
     
     jobsRecomendations.addEventListener('click', (event) => {
+        const span_jobs = document.querySelector('.span_button-Jobs');
+        arrayPeopleSelected.push(span_jobs.innerHTML);
+
         accion();
+        
         fatherNode.removeChild(jobsRecomendations)
         
     })
 
     tecnologiaRecomendations.addEventListener('click',(event) => {
+        const span_jobs = document.querySelector('.span_button-Jobs');
+        arrayPeopleSelected.push(span_jobs.innerHTML);
+        
         accion();
         fatherNode.removeChild(tecnologiaRecomendations)
+        
 
     })
     RobertKiyosakiRecomendations.addEventListener('click',(event) => {
         accion();
         fatherNode.removeChild(RobertKiyosakiRecomendations)
+        
 
     })
     marketingRecomendations.addEventListener('click', (event) => {
         accion();
         fatherNode.removeChild(marketingRecomendations)
+        
 
     })
     psicologiaRecomendations.addEventListener('click', (event) => {
         accion();
         fatherNode.removeChild(psicologiaRecomendations)
+        
 
     })
     empresasRecomendations.addEventListener('click',(event) => {
         accion();
         fatherNode.removeChild(empresasRecomendations)
         
+        
     })
     
     
 
-
+    console.log(arrayPeopleSelected)
 
 }
 userChoicesRecomendations();
