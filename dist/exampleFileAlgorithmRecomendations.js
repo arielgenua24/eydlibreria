@@ -1,9 +1,4 @@
 
-
-jobs = {
-    libros: ['la lalalal prueba 1', 'jobs j']
-}
-
 const arrayRecomendations = [];
 
 
@@ -14,19 +9,18 @@ function userChoicesRecomendations(){
 
     const section_div_people__Node = document.querySelector('.section_div__people')
     const fatherNode = document.querySelector('.section_div_choices')
-    const jobsRecomendations = document.querySelector('#button_jobs');
-    const tecnologiaRecomendations = document.querySelector('#button_tecnologia');
-    const RobertKiyosakiRecomendations =document.querySelector('#button_RobertKiyosaki');
-    const marketingRecomendations =document.querySelector('#button_Marketing');
-    const psicologiaRecomendations =document.querySelector('#button_Psicologia');
-    const empresasRecomendations =document.querySelector('#button_empresas');
     const endChoicesButton = document.querySelector('#button_endChoices')
 
-
+    const jobsRecomendations = document.querySelector('#button_jobs');
+    const tecnologiaRecomendations = document.querySelector('#button_tecnologia');
+    const RobertKiyosakiRecomendations = document.querySelector('#button_RobertKiyosaki');
+    const marketingRecomendations = document.querySelector('#button_Marketing');
+    const psicologiaRecomendations = document.querySelector('#button_Psicologia');
+    const empresasRecomendations = document.querySelector('#button_empresas');
     
 
 
-    function userChoicesResume(){
+    function ShowUserChoicesResume(){
         let div = document.createElement('div');
         div = '';
 
@@ -42,7 +36,7 @@ function userChoicesRecomendations(){
     endChoicesButton.addEventListener('click', ()=> {
         section_div_people__Node.removeChild(fatherNode);
 
-        userChoicesResume();
+        ShowUserChoicesResume();
 
     })
 
