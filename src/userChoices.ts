@@ -1,23 +1,7 @@
-import {booksToRecomend} from './booksToRecomend';
-
-let Jobs = booksToRecomend[0];
+import {JobsrecomendationsAlgorithm} from './recomendationsAlgorithm';
 
 
 const arrayChoicesSelected: string[] = [];
-
-
-
-function JobsrecomendationsAlgorithm(){
-    let jobsArray = booksToRecomend.Jobs
-
-        console.log(jobsArray[0]);
-        console.log(jobsArray[0].categoryName);
-        console.log(jobsArray[0].bookName);
-        console.log(jobsArray[0].author);
-        console.log(jobsArray[0].categoryTheme);
-
-}
-
 
 
 function userChoicesRecomendations(){
@@ -56,19 +40,14 @@ function userChoicesRecomendations(){
         section_div_people__Node.removeChild(fatherNode);
 
         ShowUserChoicesResume();
-        
-
-
-        //console.log(arrayRecomendations[0][0][0].categoryName);
+    
 
     })
 
-    jobsRecomendations.addEventListener('click', (event:undefined) => {
+     jobsRecomendations.addEventListener('click', (event:undefined) => {
         const span_jobs:any = document.querySelector('.span_button-Jobs');
         arrayChoicesSelected.push(span_jobs.innerHTML);
-
         JobsrecomendationsAlgorithm();
-        //arrayRecomendations.push(booksToRecomend.Jobs);
         
 
         fatherNode.removeChild(jobsRecomendations)

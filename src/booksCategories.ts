@@ -1,4 +1,3 @@
-import { Marketing } from './userRecomendations';
 
 export class booksCategories{
     categoryName: string;

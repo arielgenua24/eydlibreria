@@ -1,6 +1,6 @@
 module.exports = {
     mode: 'production',
-    entry: './src/recomendatiosAlgorithm.ts', 
+    entry: './src/userChoices.ts', 
     devtool: 'inline-source-map',
 
     module: {

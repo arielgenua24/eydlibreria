@@ -1,16 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var booksToRecomend_1 = require("./booksToRecomend");
-var Jobs = booksToRecomend_1.booksToRecomend[0];
+var recomendationsAlgorithm_1 = require("./recomendationsAlgorithm");
 var arrayChoicesSelected = [];
-function JobsrecomendationsAlgorithm() {
-    var jobsArray = booksToRecomend_1.booksToRecomend.Jobs;
-    console.log(jobsArray[0]);
-    console.log(jobsArray[0].categoryName);
-    console.log(jobsArray[0].bookName);
-    console.log(jobsArray[0].author);
-    console.log(jobsArray[0].categoryTheme);
-}
 function userChoicesRecomendations() {
     var section_div_people__Node = document.querySelector('.section_div__people');
     var fatherNode = document.querySelector('.section_div_choices');
@@ -33,13 +24,11 @@ function userChoicesRecomendations() {
     endChoicesButton.addEventListener('click', function () {
         section_div_people__Node.removeChild(fatherNode);
         ShowUserChoicesResume();
-        //console.log(arrayRecomendations[0][0][0].categoryName);
     });
     jobsRecomendations.addEventListener('click', function (event) {
         var span_jobs = document.querySelector('.span_button-Jobs');
         arrayChoicesSelected.push(span_jobs.innerHTML);
-        JobsrecomendationsAlgorithm();
-        //arrayRecomendations.push(booksToRecomend.Jobs);
+        (0, recomendationsAlgorithm_1.JobsrecomendationsAlgorithm)();
         fatherNode.removeChild(jobsRecomendations);
     });
     tecnologiaRecomendations.addEventListener('click', function (event) {
