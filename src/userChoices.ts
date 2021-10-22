@@ -1,4 +1,4 @@
-import {JobsrecomendationsAlgorithm} from './recomendationsAlgorithm';
+import {JobsrecomendationsAlgorithm, tecnologiaRecomendationsAlgorithm,Robert_kiAlgorithm, marketingRecomendationsAlgorithm, psicologiaRecomendationsAlgorithm, empresasRecomendationsAlgorithm} from './recomendationsAlgorithm';
 
 
 const arrayChoicesSelected: string[] = [];
@@ -58,7 +58,8 @@ function userChoicesRecomendations(){
         const span_tecnologia:any = document.querySelector('.span_button-Tecnologia');
         arrayChoicesSelected.push(span_tecnologia.innerHTML);
         
-        
+        tecnologiaRecomendationsAlgorithm();        
+
         fatherNode.removeChild(tecnologiaRecomendations)
         
 
@@ -67,7 +68,7 @@ function userChoicesRecomendations(){
         const span_RobertKiyosaki:any = document.querySelector('.span_button-RobertKiyosaki');
         arrayChoicesSelected.push(span_RobertKiyosaki.innerHTML);
 
-
+        Robert_kiAlgorithm();
         fatherNode.removeChild(RobertKiyosakiRecomendations)
         
 
@@ -75,6 +76,8 @@ function userChoicesRecomendations(){
     marketingRecomendations.addEventListener('click', (event:undefined) => {
         const span_Marketing:any = document.querySelector('.span_button-Marketing');
         arrayChoicesSelected.push(span_Marketing.innerHTML);
+
+        marketingRecomendationsAlgorithm();
 
         fatherNode.removeChild(marketingRecomendations)
         
@@ -85,6 +88,7 @@ function userChoicesRecomendations(){
         const span_Psicologia:any = document.querySelector('.span_button-Psicologia');
         arrayChoicesSelected.push(span_Psicologia.innerHTML);
 
+        psicologiaRecomendationsAlgorithm();
      
         fatherNode.removeChild(psicologiaRecomendations)
         
@@ -95,6 +99,7 @@ function userChoicesRecomendations(){
         const span_Empresas:any = document.querySelector('.span_button-Empresas');
         arrayChoicesSelected.push(span_Empresas.innerHTML);
 
+        empresasRecomendationsAlgorithm();
 
         fatherNode.removeChild(empresasRecomendations)
         

@@ -34,26 +34,31 @@ function userChoicesRecomendations() {
     tecnologiaRecomendations.addEventListener('click', function (event) {
         var span_tecnologia = document.querySelector('.span_button-Tecnologia');
         arrayChoicesSelected.push(span_tecnologia.innerHTML);
+        (0, recomendationsAlgorithm_1.tecnologiaRecomendationsAlgorithm)();
         fatherNode.removeChild(tecnologiaRecomendations);
     });
     RobertKiyosakiRecomendations.addEventListener('click', function (event) {
         var span_RobertKiyosaki = document.querySelector('.span_button-RobertKiyosaki');
         arrayChoicesSelected.push(span_RobertKiyosaki.innerHTML);
+        (0, recomendationsAlgorithm_1.Robert_kiAlgorithm)();
         fatherNode.removeChild(RobertKiyosakiRecomendations);
     });
     marketingRecomendations.addEventListener('click', function (event) {
         var span_Marketing = document.querySelector('.span_button-Marketing');
         arrayChoicesSelected.push(span_Marketing.innerHTML);
+        (0, recomendationsAlgorithm_1.marketingRecomendationsAlgorithm)();
         fatherNode.removeChild(marketingRecomendations);
     });
     psicologiaRecomendations.addEventListener('click', function (event) {
         var span_Psicologia = document.querySelector('.span_button-Psicologia');
         arrayChoicesSelected.push(span_Psicologia.innerHTML);
+        (0, recomendationsAlgorithm_1.psicologiaRecomendationsAlgorithm)();
         fatherNode.removeChild(psicologiaRecomendations);
     });
     empresasRecomendations.addEventListener('click', function (event) {
         var span_Empresas = document.querySelector('.span_button-Empresas');
         arrayChoicesSelected.push(span_Empresas.innerHTML);
+        (0, recomendationsAlgorithm_1.empresasRecomendationsAlgorithm)();
         fatherNode.removeChild(empresasRecomendations);
     });
 }
