@@ -4,17 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arielgenua24/eydlibreria.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ariel Biazzo Genua",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/arielgenua24/eydlibreria/issues"
   },
-  "homepage": "https://github.com/arielgenua24/eydlibreria#readme"
+  "homepage": "https://github.com/arielgenua24/eydlibreria#readme",
+  "devDependencies": {
+    "ts-loader": "^9.2.6",
+    "typescript": "4.4.4",
+    "webpack": "5.59.1",
+    "webpack-cli": "4.9.1"
+  }
 }

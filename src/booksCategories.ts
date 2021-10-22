@@ -1,3 +1,5 @@
+import { Marketing } from './userRecomendations';
+
 export class booksCategories{
     categoryName: string;
     categoryTheme: string[];
@@ -9,6 +11,7 @@ export class booksCategories{
         this.categoryTheme = categoryTheme;
     }
 }
+
 
 
 export const Empresa = new booksCategories('Empresa',['Emprendimiento','start-ups','Servicios','Gestion'])

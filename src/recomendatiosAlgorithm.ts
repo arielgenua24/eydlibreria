@@ -1,13 +1,28 @@
-import {recomendations, steveJobs_George, steveJobs_WalterIsaacson,RobertKiyosaki, RobertKiyosaki2, empresas, psicologia, tecnologia, Marketing } from './userRecomendations';
+import {booksToRecomend} from './booksToRecomend';
+
+let Jobs = booksToRecomend[0];
 
 
-const arrayRecomendations: string[] = [];
+const arrayChoicesSelected: string[] = [];
+
+
+
+function JobsrecomendationsAlgorithm(){
+    let jobsArray = booksToRecomend.Jobs
+
+        console.log(jobsArray[0]);
+        console.log(jobsArray[0].categoryName);
+        console.log(jobsArray[0].bookName);
+        console.log(jobsArray[0].author);
+        console.log(jobsArray[0].categoryTheme);
+
+}
 
 
 
 function userChoicesRecomendations(){
 
-    const arrayPeopleSelected: string[] = [];
+    
 
     const section_div_people__Node:any = document.querySelector('.section_div__people')
     const fatherNode:any = document.querySelector('.section_div_choices')
@@ -26,12 +41,14 @@ function userChoicesRecomendations(){
         let div:any = document.createElement('div');
         div = '';
 
-        arrayPeopleSelected.forEach(element => {
+        arrayChoicesSelected.forEach(element => {
             div = div + ` ${element} `
         });
         section_div_people__Node.append(div);
-    }
 
+
+        console.log(arrayChoicesSelected)
+    }
 
 
 
@@ -39,57 +56,47 @@ function userChoicesRecomendations(){
         section_div_people__Node.removeChild(fatherNode);
 
         ShowUserChoicesResume();
+        
+
+
+        //console.log(arrayRecomendations[0][0][0].categoryName);
 
     })
 
-
-
-
-
-    let accion = () => {
-        console.log(`tengo una serpiente en mi bota`)
-        console.log(arrayRecomendations)
-        console.log(arrayPeopleSelected)
-
-    }
-
-
-    
     jobsRecomendations.addEventListener('click', (event:undefined) => {
         const span_jobs:any = document.querySelector('.span_button-Jobs');
-        arrayPeopleSelected.push(span_jobs.innerHTML);
+        arrayChoicesSelected.push(span_jobs.innerHTML);
 
-        accion();
+        JobsrecomendationsAlgorithm();
+        //arrayRecomendations.push(booksToRecomend.Jobs);
         
+
         fatherNode.removeChild(jobsRecomendations)
         
     })
 
     tecnologiaRecomendations.addEventListener('click',(event:undefined) => {
         const span_tecnologia:any = document.querySelector('.span_button-Tecnologia');
-        arrayPeopleSelected.push(span_tecnologia.innerHTML);
+        arrayChoicesSelected.push(span_tecnologia.innerHTML);
         
-        accion();
+        
         fatherNode.removeChild(tecnologiaRecomendations)
         
 
     })
     RobertKiyosakiRecomendations.addEventListener('click',(event:undefined) => {
         const span_RobertKiyosaki:any = document.querySelector('.span_button-RobertKiyosaki');
-        arrayPeopleSelected.push(span_RobertKiyosaki.innerHTML);
+        arrayChoicesSelected.push(span_RobertKiyosaki.innerHTML);
 
 
-        accion();
         fatherNode.removeChild(RobertKiyosakiRecomendations)
         
 
     })
     marketingRecomendations.addEventListener('click', (event:undefined) => {
         const span_Marketing:any = document.querySelector('.span_button-Marketing');
-        arrayPeopleSelected.push(span_Marketing.innerHTML);
+        arrayChoicesSelected.push(span_Marketing.innerHTML);
 
-
-        accion();
         fatherNode.removeChild(marketingRecomendations)
         
 
@@ -97,9 +104,9 @@ function userChoicesRecomendations(){
     psicologiaRecomendations.addEventListener('click', (event:undefined) => {
 
         const span_Psicologia:any = document.querySelector('.span_button-Psicologia');
-        arrayPeopleSelected.push(span_Psicologia.innerHTML);
+        arrayChoicesSelected.push(span_Psicologia.innerHTML);
 
-        accion();
+     
         fatherNode.removeChild(psicologiaRecomendations)
         
 
@@ -107,9 +114,9 @@ function userChoicesRecomendations(){
     empresasRecomendations.addEventListener('click',(event:undefined) => {
 
         const span_Empresas:any = document.querySelector('.span_button-Empresas');
-        arrayPeopleSelected.push(span_Empresas.innerHTML);
+        arrayChoicesSelected.push(span_Empresas.innerHTML);
 
-        accion();
+
         fatherNode.removeChild(empresasRecomendations)
         
         
