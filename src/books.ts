@@ -5,7 +5,7 @@ export class books extends booksCategories{
     bookName: string;
     author: string;
     description: string;
-    image: string;
+    image: any;
 
     constructor(
         categoryName: string,
@@ -13,7 +13,7 @@ export class books extends booksCategories{
         bookName: string,
         author: string,
         description: string,
-        image: string
+        image: any
         ){
             super(categoryName, categoryTheme);
             this.bookName = bookName;
@@ -32,13 +32,13 @@ export class books extends booksCategories{
 
 
 
-export const habitos_para_ser_millonario = new books(desarrolloPersonal.categoryName,desarrolloPersonal.categoryTheme,'Habitos para ser millonario','Brian Tracy','¿Por qué algunas personas son más exitosas que otras? El 95 % de todo lo que piensas, sientes, haces y logras es resultado del hábito. Simplificando y organizando las ideas, Brian Tracy, experto en temas de liderazgo, estrategia, creatividad y psicología del éxito, ha escrito magistralmente un libro de obligada lectura sobre hábitos que asegura completamente el éxito personal.','src:')
+export const habitos_para_ser_millonario = new books(desarrolloPersonal.categoryName,desarrolloPersonal.categoryTheme,'Habitos para ser millonario','Brian Tracy','¿Por qué algunas personas son más exitosas que otras? El 95 % de todo lo que piensas, sientes, haces y logras es resultado del hábito. Simplificando y organizando las ideas, Brian Tracy, experto en temas de liderazgo, estrategia, creatividad y psicología del éxito, ha escrito magistralmente un libro de obligada lectura sobre hábitos que asegura completamente el éxito personal.','src::')
 
 export const como_hacer_que_la_gente_haga_cosas = new books(liderazgo.categoryName,liderazgo.categoryTheme,'Como hacer que la gente haga cosas','Robert Conkin','La clave para convencer,dirigir,motivar,supervisar e influir en los demas','src::')
 
 export const yoSteveJobs = new books(Biografias.categoryName,Biografias.categoryTheme,'Yo, Steve Jobs','George Beahm', 'Sus inpiradoras e innovadoras ideas en sus propias palabras','src::')
 
-export const SteveJobs = new books(Biografias.categoryName,Biografias.categoryTheme,'Steve Jobs','Walter Isaacson', 'La biografia definitiva de steve Jobs. Esta es la unica biografia escrita con la colaboracion de Jobs','src::')
+export const SteveJobs = new books(Biografias.categoryName,Biografias.categoryTheme,'Steve Jobs','Walter Isaacson', 'La biografia definitiva de steve Jobs. Esta es la unica biografia escrita con la colaboracion de Jobs','https://images-na.ssl-images-amazon.com/images/I/81VStYnDGrL.jpg')
 
 export const four = new books(tecnologia.categoryName,tecnologia.categoryTheme,'Four','Scott Galloway','El adn secreto de Amazon,Apple,Facebook y Google','src::')
 

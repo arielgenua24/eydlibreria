@@ -12,10 +12,10 @@ function userChoicesRecomendations(){
     const fatherNode:any = document.querySelector('.section_div_choices')
     const endChoicesButton:any = document.querySelector('#button_endChoices')
 
-    const jobsRecomendations:any = document.querySelector('#button_jobs');
-    const tecnologiaRecomendations:any = document.querySelector('#button_tecnologia');
-    const RobertKiyosakiRecomendations:any = document.querySelector('#button_RobertKiyosaki');
-    const marketingRecomendations:any = document.querySelector('#button_Marketing');
+    
+    
+    
+    
     const psicologiaRecomendations:any = document.querySelector('#button_Psicologia');
     const empresasRecomendations:any = document.querySelector('#button_empresas');
     
@@ -40,19 +40,25 @@ function userChoicesRecomendations(){
         section_div_people__Node.removeChild(fatherNode);
 
         ShowUserChoicesResume();
+        //cuandoo aprete el boton listo, este lo que hara es agregar una sola vez toda la data cargada en el dom
     
+        //JobsrecomendationsAlgorithm();
 
     })
+
+    const jobsRecomendations:any = document.querySelector('#button_jobs');
 
      jobsRecomendations.addEventListener('click', (event:undefined) => {
         const span_jobs:any = document.querySelector('.span_button-Jobs');
         arrayChoicesSelected.push(span_jobs.innerHTML);
-        JobsrecomendationsAlgorithm();
+        
         
 
         fatherNode.removeChild(jobsRecomendations)
         
     })
+
+    const tecnologiaRecomendations:any = document.querySelector('#button_tecnologia');
 
     tecnologiaRecomendations.addEventListener('click',(event:undefined) => {
         const span_tecnologia:any = document.querySelector('.span_button-Tecnologia');
@@ -64,6 +70,8 @@ function userChoicesRecomendations(){
         
 
     })
+    const RobertKiyosakiRecomendations:any = document.querySelector('#button_RobertKiyosaki');
+
     RobertKiyosakiRecomendations.addEventListener('click',(event:undefined) => {
         const span_RobertKiyosaki:any = document.querySelector('.span_button-RobertKiyosaki');
         arrayChoicesSelected.push(span_RobertKiyosaki.innerHTML);
@@ -73,6 +81,9 @@ function userChoicesRecomendations(){
         
 
     })
+
+    const marketingRecomendations:any = document.querySelector('#button_Marketing');
+
     marketingRecomendations.addEventListener('click', (event:undefined) => {
         const span_Marketing:any = document.querySelector('.span_button-Marketing');
         arrayChoicesSelected.push(span_Marketing.innerHTML);

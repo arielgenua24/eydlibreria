@@ -2,6 +2,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.empresasRecomendationsAlgorithm = exports.psicologiaRecomendationsAlgorithm = exports.marketingRecomendationsAlgorithm = exports.Robert_kiAlgorithm = exports.tecnologiaRecomendationsAlgorithm = exports.JobsrecomendationsAlgorithm = void 0;
 var booksToRecomend_1 = require("./booksToRecomend");
+/*let allowRecomendations = {
+    Jobs: false,
+    Tecnologia: false,
+    Robert_ki: false,
+} */
 function JobsrecomendationsAlgorithm() {
     var jobsArray = booksToRecomend_1.booksToRecomend.Jobs;
     console.group('first book');
@@ -18,6 +23,30 @@ function JobsrecomendationsAlgorithm() {
     console.log(jobsArray[1].author);
     console.log(jobsArray[1].categoryTheme);
     console.groupEnd();
+    var section_div_people__Node = document.querySelector('.section_div__people');
+    var section = document.createElement('section');
+    section.className = 'container_booksjobs';
+    var div_bookImg = document.createElement('div');
+    div_bookImg.className = 'div_bookImg';
+    var image = document.createElement('img');
+    image.src = jobsArray[0].image;
+    div_bookImg.append(image);
+    var div_bookStats = document.createElement('div');
+    div_bookStats.className = 'div_bookStats';
+    var stats = document.createElement('span');
+    stats.textContent = 'Este libro ha sido visitado por mas de 1500 personas';
+    div_bookStats.append(stats);
+    var div_bookResume = document.createElement('div');
+    div_bookResume.className = 'div_bookResume';
+    var resume = document.createElement('p');
+    resume.textContent = jobsArray[0].description;
+    div_bookResume.append(resume);
+    var div_buy = document.createElement('div');
+    div_buy.className = 'div_buy';
+    var button_buy = document.createElement('button');
+    button_buy.textContent = 'haga click para comprar';
+    section.append(div_bookImg, div_bookStats, div_bookResume, div_buy);
+    section_div_people__Node.append(section);
 }
 exports.JobsrecomendationsAlgorithm = JobsrecomendationsAlgorithm;
 function tecnologiaRecomendationsAlgorithm() {

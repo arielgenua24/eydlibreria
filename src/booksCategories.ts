@@ -1,10 +1,12 @@
+import { booksToRecomend } from "./booksToRecomend";
 
 export class booksCategories{
     categoryName: string;
     categoryTheme: string[];
     constructor(
         categoryName: string,
-        categoryTheme: string[]
+        categoryTheme: string[],
+        
     ){
         this.categoryName = categoryName;
         this.categoryTheme = categoryTheme;

@@ -2,10 +2,17 @@ import { booksToRecomend } from "./booksToRecomend";
 
 
 
+/*let allowRecomendations = {
+    Jobs: false,
+    Tecnologia: false,
+    Robert_ki: false,
+} */
+
+
 export function JobsrecomendationsAlgorithm(){
     let jobsArray = booksToRecomend.Jobs
 
-    console.group('first book')
+    /*console.group('first book')
         console.log(jobsArray[0]);
         console.log(jobsArray[0].categoryName);
         console.log(jobsArray[0].bookName);
@@ -20,6 +27,53 @@ export function JobsrecomendationsAlgorithm(){
         console.log(jobsArray[1].author);
         console.log(jobsArray[1].categoryTheme);
     console.groupEnd()
+*/
+    const section_div_people__Node:any = document.querySelector('.section_div__people')
+
+    const section = document.createElement('section');
+    section.className = 'container_booksjobs';
+
+
+
+    const div_bookImg = document.createElement('div')
+    div_bookImg.className = 'div_bookImg'
+    const image = document.createElement('img');
+    image.src = jobsArray[0].image;   
+    div_bookImg.append(image)
+
+
+
+
+    const div_bookStats = document.createElement('div')
+    div_bookStats.className = 'div_bookStats'
+    const stats = document.createElement('span')
+    stats.textContent = 'Este libro ha sido visitado por mas de 1500 personas';
+    div_bookStats.append(stats)
+
+
+    const div_bookResume = document.createElement('div')
+    div_bookResume.className = 'div_bookResume'
+    const resume = document.createElement('p')
+    resume.textContent = jobsArray[0].description;
+    div_bookResume.append(resume)
+
+
+
+
+    const div_buy = document.createElement('div')
+    div_buy.className = 'div_buy'
+    const button_buy = document.createElement('button');
+    button_buy.textContent = 'haga click para comprar'
+
+
+
+
+
+    section.append(div_bookImg,div_bookStats,div_bookResume,div_buy);
+    section_div_people__Node.append(section)
+
+
+
 
 
 

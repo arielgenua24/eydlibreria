@@ -6,10 +6,6 @@ function userChoicesRecomendations() {
     var section_div_people__Node = document.querySelector('.section_div__people');
     var fatherNode = document.querySelector('.section_div_choices');
     var endChoicesButton = document.querySelector('#button_endChoices');
-    var jobsRecomendations = document.querySelector('#button_jobs');
-    var tecnologiaRecomendations = document.querySelector('#button_tecnologia');
-    var RobertKiyosakiRecomendations = document.querySelector('#button_RobertKiyosaki');
-    var marketingRecomendations = document.querySelector('#button_Marketing');
     var psicologiaRecomendations = document.querySelector('#button_Psicologia');
     var empresasRecomendations = document.querySelector('#button_empresas');
     function ShowUserChoicesResume() {
@@ -24,25 +20,30 @@ function userChoicesRecomendations() {
     endChoicesButton.addEventListener('click', function () {
         section_div_people__Node.removeChild(fatherNode);
         ShowUserChoicesResume();
+        //cuandoo aprete el boton listo, este lo que hara es agregar una sola vez toda la data cargada en el dom
+        //JobsrecomendationsAlgorithm();
     });
+    var jobsRecomendations = document.querySelector('#button_jobs');
     jobsRecomendations.addEventListener('click', function (event) {
         var span_jobs = document.querySelector('.span_button-Jobs');
-        arrayChoicesSelected.push(span_jobs.innerHTML);
-        (0, recomendationsAlgorithm_1.JobsrecomendationsAlgorithm)();
+        arrayChoicesSelected.push(span_jobs);
         fatherNode.removeChild(jobsRecomendations);
     });
+    var tecnologiaRecomendations = document.querySelector('#button_tecnologia');
     tecnologiaRecomendations.addEventListener('click', function (event) {
         var span_tecnologia = document.querySelector('.span_button-Tecnologia');
         arrayChoicesSelected.push(span_tecnologia.innerHTML);
         (0, recomendationsAlgorithm_1.tecnologiaRecomendationsAlgorithm)();
         fatherNode.removeChild(tecnologiaRecomendations);
     });
+    var RobertKiyosakiRecomendations = document.querySelector('#button_RobertKiyosaki');
     RobertKiyosakiRecomendations.addEventListener('click', function (event) {
         var span_RobertKiyosaki = document.querySelector('.span_button-RobertKiyosaki');
         arrayChoicesSelected.push(span_RobertKiyosaki.innerHTML);
         (0, recomendationsAlgorithm_1.Robert_kiAlgorithm)();
         fatherNode.removeChild(RobertKiyosakiRecomendations);
     });
+    var marketingRecomendations = document.querySelector('#button_Marketing');
     marketingRecomendations.addEventListener('click', function (event) {
         var span_Marketing = document.querySelector('.span_button-Marketing');
         arrayChoicesSelected.push(span_Marketing.innerHTML);
