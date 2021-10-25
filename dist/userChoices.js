@@ -28,6 +28,7 @@ function userChoicesRecomendations() {
         exports.arrayChoicesSelected.push(span_tecnologia.innerHTML);
         fatherNode.removeChild(tecnologiaRecomendations);
         event.stopPropagation();
+        (0, showRecomendations_1.showRecomendations)(booksCategories_1.tecnologia.recomendations);
     });
     var RobertKiyosakiRecomendations = document.querySelector('#button_RobertKiyosaki');
     RobertKiyosakiRecomendations.addEventListener('click', function (event) {
@@ -35,6 +36,7 @@ function userChoicesRecomendations() {
         exports.arrayChoicesSelected.push(span_RobertKiyosaki.innerHTML);
         fatherNode.removeChild(RobertKiyosakiRecomendations);
         event.stopPropagation();
+        (0, showRecomendations_1.showRecomendations)(booksCategories_1.Finanzas.recomendations);
     });
     var marketingRecomendations = document.querySelector('#button_Marketing');
     marketingRecomendations.addEventListener('click', function (event) {
@@ -42,6 +44,7 @@ function userChoicesRecomendations() {
         exports.arrayChoicesSelected.push(span_Marketing.innerHTML);
         fatherNode.removeChild(marketingRecomendations);
         event.stopPropagation();
+        (0, showRecomendations_1.showRecomendations)(booksCategories_1.marketing.recomendations);
     });
     var psicologiaRecomendations = document.querySelector('#button_Psicologia');
     psicologiaRecomendations.addEventListener('click', function (event) {
@@ -49,6 +52,7 @@ function userChoicesRecomendations() {
         exports.arrayChoicesSelected.push(span_Psicologia.innerHTML);
         fatherNode.removeChild(psicologiaRecomendations);
         event.stopPropagation();
+        (0, showRecomendations_1.showRecomendations)(booksCategories_1.psicologia.recomendations);
     });
     var empresasRecomendations = document.querySelector('#button_empresas');
     empresasRecomendations.addEventListener('click', function (event) {
@@ -56,6 +60,7 @@ function userChoicesRecomendations() {
         exports.arrayChoicesSelected.push(span_Empresas.innerHTML);
         fatherNode.removeChild(empresasRecomendations);
         event.stopPropagation();
+        (0, showRecomendations_1.showRecomendations)(booksCategories_1.Empresa.recomendations);
     });
 }
 userChoicesRecomendations();

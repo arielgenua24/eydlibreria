@@ -5,8 +5,6 @@
     --thirdColor: #B8B0B0;
     --fourthColor: #7C7575;
     --fifthColor: #525252;
-
-     
 }
 
 * {
@@ -14,6 +12,8 @@
     margin: 0;
     box-sizing: border-box;
     background-color: #faf8f7;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thirdColor); 
 }
 html {
     font-size: 62.5%;
@@ -36,6 +36,7 @@ body {
     border-radius: 0px 0px 13px 13px;
     font-size: var(--font);
     position: fixed;
+    z-index: 2;
 }
 h1 {
     background-color: var(--secondColor);
@@ -148,9 +149,11 @@ span {
     margin-right: 30px;
     margin-left: 5px;  
     position: relative;
+    border-radius: 15px;
 }
 
 .div__book__Container {
+  z-index: 1;
   margin-left: 20px;
   background-color: #fafafa;
   width: 159px;
@@ -175,7 +178,7 @@ span {
     width:100px;
     height: 130px;
     -webkit-box-shadow: 5px 14px 19px 8px rgba(0,0,0,0.18); 
-    box-shadow: 5px 14px 19px 8px rgba(0,0,0,0.18);
+    box-shadow: 5px 14px 19px 8px rgba(0, 0, 0, 0.116);
 }
 
 .div__book__Resume {
@@ -191,11 +194,6 @@ span {
   margin-right: 29px;
   border-radius: 5px;
 }
-
-.div__resume-book > p {
-    margin-left: 8px;
-}
-
 .div__book__buy {
   width: 300px;
   height: 60px;

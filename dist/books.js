@@ -26,23 +26,23 @@ exports.yoSteveJobs = yoSteveJobs;
 var SteveJobs = new books('Steve Jobs', 'Walter Isaacson', 'La biografia definitiva de steve Jobs. Esta es la unica biografia escrita con la colaboracion de Jobs', 'https://images-na.ssl-images-amazon.com/images/I/81VStYnDGrL.jpg', true, 'biografia');
 exports.SteveJobs = SteveJobs;
 //tecnologia
-var four = new books('Four', 'Scott Galloway', 'El adn secreto de Amazon,Apple,Facebook y Google', 'src::', true, 'tecnologia');
+var four = new books('Four', 'Scott Galloway', 'El adn secreto de Amazon,Apple,Facebook y Google', 'https://http2.mlstatic.com/D_NQ_NP_2X_988097-MLA46366104100_062021-F.webp', true, 'tecnologia');
 exports.four = four;
-var graciasPorLLegarTarde = new books('Gracias por llegar tarde', 'Thomas L. Friedman', 'Como la tecnologia,la globalizacion y el cambio climatico transformaran el mundo en los proximosm años', 'src::', true, 'tecnologia');
+var graciasPorLLegarTarde = new books('Gracias por llegar tarde', 'Thomas L. Friedman', 'Como la tecnologia,la globalizacion y el cambio climatico transformaran el mundo en los proximosm años', 'https://www.planetadelibros.com.ar/usuaris/libros/fotos/275/m_libros/portada_gracias-por-llegar-tarde_thomas-friedman_201807032109.jpg', true, 'tecnologia');
 exports.graciasPorLLegarTarde = graciasPorLLegarTarde;
-var innovadoresQueHacenHistoria = new books(' Innovadores que hacen historia', 'Jim Stengel', 'Como las Startups y emprendedores dan vida a las grandes empresas', 'src::', true, 'tecnologia');
+var innovadoresQueHacenHistoria = new books(' Innovadores que hacen historia', 'Jim Stengel', 'Como las Startups y emprendedores dan vida a las grandes empresas', 'https://www.planetadelibros.com.ar/usuaris/libros/fotos/301/m_libros/portada_innovadores-que-hacen-historia_jim-stengel_201907111634.jpg', true, 'tecnologia');
 exports.innovadoresQueHacenHistoria = innovadoresQueHacenHistoria;
 //finanzas
-var padreRicoPadrePobre_RobertKi = new books('Padre Rico, Padre Pobre', 'Robert Kiyosaki', 'Que les enseñan los ricos a sus hijos acerca del dinero y que los pobre y clase media no!', 'src::', true, 'finanzas');
+var padreRicoPadrePobre_RobertKi = new books('Padre Rico, Padre Pobre', 'Robert Kiyosaki', 'Que les enseñan los ricos a sus hijos acerca del dinero y que los pobre y clase media no!', 'https://images-na.ssl-images-amazon.com/images/I/51AfxoGfb1L.jpg', true, 'finanzas');
 exports.padreRicoPadrePobre_RobertKi = padreRicoPadrePobre_RobertKi;
-var elJuegoDelDinero_RobertKi = new books('El juego del dinero', 'Robert Kiyosaki', 'Por que los inversionistas lentos pierden, y el dinero rapido gana!', 'src::', true, 'finanzas');
+var elJuegoDelDinero_RobertKi = new books('El juego del dinero', 'Robert Kiyosaki', 'Por que los inversionistas lentos pierden, y el dinero rapido gana!', 'https://m.media-amazon.com/images/I/519uxzNtMmL.jpg', true, 'finanzas');
 exports.elJuegoDelDinero_RobertKi = elJuegoDelDinero_RobertKi;
-var elToqueDeMildas_RobertKi = new books('El toque de mildas', 'Robert Kiyosaki, Donald Trump', 'Por que algunos empresarios se hacen ricos y la mayoria no', 'src', true, 'finanzas');
+var elToqueDeMildas_RobertKi = new books('El toque de mildas', 'Robert Kiyosaki, Donald Trump', 'Por que algunos empresarios se hacen ricos y la mayoria no', 'https://contentv2.tap-commerce.com/cover/large/9789877350104_1.jpg?id_com=1113', true, 'finanzas');
 exports.elToqueDeMildas_RobertKi = elToqueDeMildas_RobertKi;
 //marketing
-var EstoEsMarketing = new books('Esto es Marketing', 'Seth Godin', 'Un enfoque innovador sobre Marketing, Ventas y Publicidad', 'image::', true, 'marketing');
+var EstoEsMarketing = new books('Esto es Marketing', 'Seth Godin', 'Un enfoque innovador sobre Marketing, Ventas y Publicidad', 'https://www.planetadelibros.com.ar/usuaris/libros/fotos/291/m_libros/290386_portada___201811071104.jpg', true, 'marketing');
 exports.EstoEsMarketing = EstoEsMarketing;
-var oceanoAzul = new books('La estrategia del Oceano Azul', 'W. Chan Kim, Renee Mauborgne', 'Un enfoque innovador sobre Marketing, Ventas y Publicidad', 'image::', true, 'marketing');
+var oceanoAzul = new books('La estrategia del Oceano Azul', 'W. Chan Kim, Renee Mauborgne', 'Un enfoque innovador sobre Marketing, Ventas y Publicidad', 'https://images-na.ssl-images-amazon.com/images/I/71LaKkJVeFL.jpg', true, 'marketing');
 exports.oceanoAzul = oceanoAzul;
 //psicologia
 var pensarRapidoPensarDespacio = new books('Pensar rapido, Pensar despacio', 'Daniel Kahneman', 'Este autor ganador del premio Nobel de economia, revela como funciona el cerebro y la toma de decisiones', 'src::', true, 'psicologia');

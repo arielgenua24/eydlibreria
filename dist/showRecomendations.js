@@ -32,7 +32,7 @@ function showRecomendations(param) {
         div__book__Container.append(h2);
         var image = document.createElement('img');
         image.src = "" + el.image;
-        image.className = 'image_size';
+        image.className = "image_size";
         div__book__Container.append(image);
         console.log(image);
         var div__book__Resume = document.createElement('div');

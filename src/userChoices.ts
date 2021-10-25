@@ -47,6 +47,7 @@ function userChoicesRecomendations(){
         arrayChoicesSelected.push(span_tecnologia.innerHTML);
         fatherNode.removeChild(tecnologiaRecomendations)
         event.stopPropagation();
+        showRecomendations(tecnologia.recomendations)
         
 
     })
@@ -58,6 +59,7 @@ function userChoicesRecomendations(){
         arrayChoicesSelected.push(span_RobertKiyosaki.innerHTML);
         fatherNode.removeChild(RobertKiyosakiRecomendations)
         event.stopPropagation();
+        showRecomendations(Finanzas.recomendations)
         
 
     })
@@ -70,6 +72,7 @@ function userChoicesRecomendations(){
         arrayChoicesSelected.push(span_Marketing.innerHTML);
         fatherNode.removeChild(marketingRecomendations)
         event.stopPropagation();
+        showRecomendations(marketing.recomendations)
         
 
     })
@@ -82,6 +85,7 @@ function userChoicesRecomendations(){
         arrayChoicesSelected.push(span_Psicologia.innerHTML);
         fatherNode.removeChild(psicologiaRecomendations)
         event.stopPropagation();
+        showRecomendations(psicologia.recomendations)
         
 
     })
@@ -94,6 +98,7 @@ function userChoicesRecomendations(){
         arrayChoicesSelected.push(span_Empresas.innerHTML);
         fatherNode.removeChild(empresasRecomendations)
         event.stopPropagation();
+        showRecomendations(Empresa.recomendations)
         
         
     })
