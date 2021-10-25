@@ -6,7 +6,7 @@ const section_div_people__Node:any = document.querySelector('.section_div__peopl
 
 export function ShowUserChoicesResume(){
 
-    
+    /*
 
     let div:any = document.createElement('div');
     div = '';
@@ -15,49 +15,74 @@ export function ShowUserChoicesResume(){
         div = div + ` ${element} `
     });
     section_div_people__Node.append(div);
-
+*/
 
     console.log(arrayChoicesSelected)
 }
 
-function showRecomendations() {
 
+let container:any = [];
+
+export function showRecomendations(param:any) {
+
+    const array = param
+    //param va a tener 2 elementos
+
+    array.forEach((el:any) => {
+        
     const section__recomendations:any = document.createElement('section');
+    section__recomendations.className = 'section__recomendations'
 
     const div__book__Container: any = document.createElement('div')
-    const image = document.createElement('img')
-    image.src = 'img'
-    div__book__Container.append(image)
+    div__book__Container.className = 'div__book__Container'
 
-
-
-    const div__book__Resume:any = document.querySelector('div')
-    const paragraph: any = document.createTextNode('')
-    div__book__Resume.append(paragraph)
-
-
-    const div__book__stadistics: any = document.querySelector('div')
-    const stadistics: any = document.createTextNode('')
-    div__book__stadistics.append(stadistics)
+    const h2 = document.createElement('h2')
+    h2.textContent = `${el.bookName}`
+    h2.className = 'div__span-fontSize'
+    div__book__Container.append(h2)
     
-    const div__book__buy: any = document.querySelector('div')
+    const image = document.createElement('img')
+    image.src = `${el.image}`
+    image.className = "image_size"
+    div__book__Container.append(image) 
+    console.log(image) 
+
+
+    const div__book__Resume:any = document.createElement('div')
+    div__book__Resume.className = 'div__book__Resume';
+    const paragraph: any = document.createElement("p")
+    paragraph.textContent = `${el.description}`
+    div__book__Resume.append(paragraph)
+    console.log(paragraph)
+
+    
+
+    const div__book__buy: any = document.createElement('div')
+    div__book__buy.className = "div__book__buy"
     const button = document.createElement('button')
-    button.textContent = ''
+    button.textContent = 'Conectar con el vendedor por WhatsApp'
     div__book__buy.append(button)
 
 
 
-    section__recomendations.append(div__book__Container,div__book__Resume,div__book__buy,div__book__stadistics)
+    section__recomendations.append(div__book__Container, div__book__Resume,div__book__buy) 
 
-    //el apend total sera todos los elementos creados, se uniran a section_div_people__Node.
+    container.push(section__recomendations)
 
-    function finalAppend() {
+    });
 
-        section_div_people__Node.append(section__recomendations)
+    
+
+    
+
+}
+
+//el apend total sera todos los elementos creados, se uniran a section_div_people__Node.
 
 
-    }
+export function finalAppend() {
 
+    section_div_people__Node.append(...container)
 
 
 }

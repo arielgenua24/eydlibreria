@@ -40,14 +40,12 @@ import { booksCategories,Empresa, Biografias, Finanzas, liderazgo, psicologia, a
  const como_hacer_que_la_gente_haga_cosas = new books('Como hacer que la gente haga cosas','Robert Conkin','La clave para convencer,dirigir,motivar,supervisar e influir en los demas','src::',false,'liderazgo')
 
  
-liderazgo.addRecomendations([habitos_para_ser_millonario,como_hacer_que_la_gente_haga_cosas])
  
 //biografias
-const yoSteveJobs = new books('Yo, Steve Jobs','George Beahm', 'Sus inpiradoras e innovadoras ideas en sus propias palabras','src::',true,'Biografia')
+const yoSteveJobs = new books('Yo, Steve Jobs','George Beahm', 'Sus inpiradoras e innovadoras ideas en sus propias palabras','https://http2.mlstatic.com/D_NQ_NP_2X_833794-MLA30166326733_042019-F.webp',true,'Biografia')
 
 const SteveJobs = new books('Steve Jobs','Walter Isaacson', 'La biografia definitiva de steve Jobs. Esta es la unica biografia escrita con la colaboracion de Jobs','https://images-na.ssl-images-amazon.com/images/I/81VStYnDGrL.jpg',true,'biografia')
 
-Biografias.addRecomendations([yoSteveJobs, SteveJobs])
 
 //tecnologia
 const four = new books('Four','Scott Galloway','El adn secreto de Amazon,Apple,Facebook y Google','src::',true,'tecnologia')
@@ -56,7 +54,6 @@ const graciasPorLLegarTarde = new books('Gracias por llegar tarde','Thomas L. Fr
 
 const innovadoresQueHacenHistoria = new books(' Innovadores que hacen historia', 'Jim Stengel','Como las Startups y emprendedores dan vida a las grandes empresas','src::',true,'tecnologia')
 
-tecnologia.addRecomendations([four,graciasPorLLegarTarde,innovadoresQueHacenHistoria])
 
 //finanzas
 const padreRicoPadrePobre_RobertKi = new books('Padre Rico, Padre Pobre','Robert Kiyosaki','Que les enseñan los ricos a sus hijos acerca del dinero y que los pobre y clase media no!','src::',true,'finanzas')
@@ -65,14 +62,12 @@ const elJuegoDelDinero_RobertKi = new books('El juego del dinero','Robert Kiyosa
 
 const elToqueDeMildas_RobertKi = new books('El toque de mildas','Robert Kiyosaki, Donald Trump','Por que algunos empresarios se hacen ricos y la mayoria no','src',true,'finanzas')
 
-Finanzas.addRecomendations([padreRicoPadrePobre_RobertKi,elJuegoDelDinero_RobertKi,elToqueDeMildas_RobertKi])
 
 //marketing
 const EstoEsMarketing = new books('Esto es Marketing','Seth Godin','Un enfoque innovador sobre Marketing, Ventas y Publicidad','image::',true,'marketing')
 
 const oceanoAzul = new books('La estrategia del Oceano Azul','W. Chan Kim, Renee Mauborgne','Un enfoque innovador sobre Marketing, Ventas y Publicidad','image::',true,'marketing')
 
-marketing.addRecomendations([EstoEsMarketing,oceanoAzul])
 
 
 //psicologia
@@ -86,7 +81,6 @@ const Propaganda = new books('Propaganda','Edward Bernays','Como maniupular la o
 
 const elHombreYsusSimbolos = new books('El hombre y sus simbolos','Carl G. Jung','Estudiar la relevancia de simbolos, nunca ha sido tan importante','src::',false,'psicologia')
 
-psicologia.addRecomendations([pensarRapidoPensarDespacio,elLibroRojo,loInconciente,Propaganda,elHombreYsusSimbolos])
 
 //empresa
 const laExperienciaDelCliente = new books('La experiencia del cliente','Hugo Brunetta','Este libro es un manual detallado y práctico sobre la administración de la experiencia del cliente desde una perspectiva ciento por ciento real, producto de muchos años de actividad y competencia del autor en consultoría y capacitación. ','img::',true,'empresa') 
@@ -99,7 +93,6 @@ const nuncaTiresLaToalla = new books('Nunca tires la toalla','Donald Trump','Com
 
 const equiposExtremos = new books('Equipos Extremos','Robert Bruce Shaw','Por que pixar, Airbnb, y otras empresas triunfan donde la mayoria fracasan','img::',false,'empresa')
 
-Empresa.addRecomendations([laExperienciaDelCliente,elEstiloVirgin,elModeloToyota,nuncaTiresLaToalla,equiposExtremos])
 
 
 

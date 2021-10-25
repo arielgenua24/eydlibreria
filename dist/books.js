@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.elToqueDeMildas_RobertKi = exports.elJuegoDelDinero_RobertKi = exports.padreRicoPadrePobre_RobertKi = exports.pensarRapidoPensarDespacio = exports.EstoEsMarketing = exports.graciasPorLLegarTarde = exports.oceanoAzul = exports.elLibroRojo = exports.innovadoresQueHacenHistoria = exports.loInconciente = exports.laExperienciaDelCliente = exports.elHombreYsusSimbolos = exports.Propaganda = exports.nuncaTiresLaToalla = exports.elModeloToyota = exports.elEstiloVirgin = exports.equiposExtremos = exports.four = exports.SteveJobs = exports.como_hacer_que_la_gente_haga_cosas = exports.yoSteveJobs = exports.habitos_para_ser_millonario = void 0;
-var booksCategories_1 = require("./booksCategories");
 var books = /** @class */ (function () {
     function books(bookName, author, description, image, isRecommended, category) {
         if (isRecommended === void 0) { isRecommended = false; }
@@ -21,13 +20,11 @@ var habitos_para_ser_millonario = new books('Habitos para ser millonario', 'Bria
 exports.habitos_para_ser_millonario = habitos_para_ser_millonario;
 var como_hacer_que_la_gente_haga_cosas = new books('Como hacer que la gente haga cosas', 'Robert Conkin', 'La clave para convencer,dirigir,motivar,supervisar e influir en los demas', 'src::', false, 'liderazgo');
 exports.como_hacer_que_la_gente_haga_cosas = como_hacer_que_la_gente_haga_cosas;
-booksCategories_1.liderazgo.addRecomendations([habitos_para_ser_millonario, como_hacer_que_la_gente_haga_cosas]);
 //biografias
-var yoSteveJobs = new books('Yo, Steve Jobs', 'George Beahm', 'Sus inpiradoras e innovadoras ideas en sus propias palabras', 'src::', true, 'Biografia');
+var yoSteveJobs = new books('Yo, Steve Jobs', 'George Beahm', 'Sus inpiradoras e innovadoras ideas en sus propias palabras', 'https://http2.mlstatic.com/D_NQ_NP_2X_833794-MLA30166326733_042019-F.webp', true, 'Biografia');
 exports.yoSteveJobs = yoSteveJobs;
 var SteveJobs = new books('Steve Jobs', 'Walter Isaacson', 'La biografia definitiva de steve Jobs. Esta es la unica biografia escrita con la colaboracion de Jobs', 'https://images-na.ssl-images-amazon.com/images/I/81VStYnDGrL.jpg', true, 'biografia');
 exports.SteveJobs = SteveJobs;
-booksCategories_1.Biografias.addRecomendations([yoSteveJobs, SteveJobs]);
 //tecnologia
 var four = new books('Four', 'Scott Galloway', 'El adn secreto de Amazon,Apple,Facebook y Google', 'src::', true, 'tecnologia');
 exports.four = four;
@@ -35,7 +32,6 @@ var graciasPorLLegarTarde = new books('Gracias por llegar tarde', 'Thomas L. Fri
 exports.graciasPorLLegarTarde = graciasPorLLegarTarde;
 var innovadoresQueHacenHistoria = new books(' Innovadores que hacen historia', 'Jim Stengel', 'Como las Startups y emprendedores dan vida a las grandes empresas', 'src::', true, 'tecnologia');
 exports.innovadoresQueHacenHistoria = innovadoresQueHacenHistoria;
-booksCategories_1.tecnologia.addRecomendations([four, graciasPorLLegarTarde, innovadoresQueHacenHistoria]);
 //finanzas
 var padreRicoPadrePobre_RobertKi = new books('Padre Rico, Padre Pobre', 'Robert Kiyosaki', 'Que les enseñan los ricos a sus hijos acerca del dinero y que los pobre y clase media no!', 'src::', true, 'finanzas');
 exports.padreRicoPadrePobre_RobertKi = padreRicoPadrePobre_RobertKi;
@@ -43,13 +39,11 @@ var elJuegoDelDinero_RobertKi = new books('El juego del dinero', 'Robert Kiyosak
 exports.elJuegoDelDinero_RobertKi = elJuegoDelDinero_RobertKi;
 var elToqueDeMildas_RobertKi = new books('El toque de mildas', 'Robert Kiyosaki, Donald Trump', 'Por que algunos empresarios se hacen ricos y la mayoria no', 'src', true, 'finanzas');
 exports.elToqueDeMildas_RobertKi = elToqueDeMildas_RobertKi;
-booksCategories_1.Finanzas.addRecomendations([padreRicoPadrePobre_RobertKi, elJuegoDelDinero_RobertKi, elToqueDeMildas_RobertKi]);
 //marketing
 var EstoEsMarketing = new books('Esto es Marketing', 'Seth Godin', 'Un enfoque innovador sobre Marketing, Ventas y Publicidad', 'image::', true, 'marketing');
 exports.EstoEsMarketing = EstoEsMarketing;
 var oceanoAzul = new books('La estrategia del Oceano Azul', 'W. Chan Kim, Renee Mauborgne', 'Un enfoque innovador sobre Marketing, Ventas y Publicidad', 'image::', true, 'marketing');
 exports.oceanoAzul = oceanoAzul;
-booksCategories_1.marketing.addRecomendations([EstoEsMarketing, oceanoAzul]);
 //psicologia
 var pensarRapidoPensarDespacio = new books('Pensar rapido, Pensar despacio', 'Daniel Kahneman', 'Este autor ganador del premio Nobel de economia, revela como funciona el cerebro y la toma de decisiones', 'src::', true, 'psicologia');
 exports.pensarRapidoPensarDespacio = pensarRapidoPensarDespacio;
@@ -61,7 +55,6 @@ var Propaganda = new books('Propaganda', 'Edward Bernays', 'Como maniupular la o
 exports.Propaganda = Propaganda;
 var elHombreYsusSimbolos = new books('El hombre y sus simbolos', 'Carl G. Jung', 'Estudiar la relevancia de simbolos, nunca ha sido tan importante', 'src::', false, 'psicologia');
 exports.elHombreYsusSimbolos = elHombreYsusSimbolos;
-booksCategories_1.psicologia.addRecomendations([pensarRapidoPensarDespacio, elLibroRojo, loInconciente, Propaganda, elHombreYsusSimbolos]);
 //empresa
 var laExperienciaDelCliente = new books('La experiencia del cliente', 'Hugo Brunetta', 'Este libro es un manual detallado y práctico sobre la administración de la experiencia del cliente desde una perspectiva ciento por ciento real, producto de muchos años de actividad y competencia del autor en consultoría y capacitación. ', 'img::', true, 'empresa');
 exports.laExperienciaDelCliente = laExperienciaDelCliente;
@@ -73,4 +66,3 @@ var nuncaTiresLaToalla = new books('Nunca tires la toalla', 'Donald Trump', 'Com
 exports.nuncaTiresLaToalla = nuncaTiresLaToalla;
 var equiposExtremos = new books('Equipos Extremos', 'Robert Bruce Shaw', 'Por que pixar, Airbnb, y otras empresas triunfan donde la mayoria fracasan', 'img::', false, 'empresa');
 exports.equiposExtremos = equiposExtremos;
-booksCategories_1.Empresa.addRecomendations([laExperienciaDelCliente, elEstiloVirgin, elModeloToyota, nuncaTiresLaToalla, equiposExtremos]);
