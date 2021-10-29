@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.booksToRecomend = void 0;
-var books_1 = require("./books");
+const books_1 = require("./books");
 exports.booksToRecomend = {
     desarrolloPersonal: books_1.habitos_para_ser_millonario,
     liderazgo: books_1.como_hacer_que_la_gente_haga_cosas,

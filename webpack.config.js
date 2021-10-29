@@ -1,6 +1,6 @@
 module.exports = {
     mode: 'production',
-    entry: './src/userChoices.ts', 
+    entry: './src/searchBooks.ts', 
     devtool: 'inline-source-map',
 
     module: {
