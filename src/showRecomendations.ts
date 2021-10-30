@@ -40,6 +40,7 @@ export function showRecomendations(param:any) {
     h2.textContent = `${el.bookName}`
     h2.className = 'div__span-fontSize'
     div__book__Container.append(h2)
+    console.log(h2)
     
     const image = document.createElement('img')
     image.src = `${el.image}`
@@ -62,6 +63,7 @@ export function showRecomendations(param:any) {
     const button = document.createElement('button')
     button.textContent = 'Conectar con el vendedor por WhatsApp'
     div__book__buy.append(button)
+    console.log(div__book__buy)
 
 
 
@@ -70,10 +72,6 @@ export function showRecomendations(param:any) {
     container.push(section__recomendations)
 
     });
-
-    
-
-    
 
 }
 

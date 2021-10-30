@@ -30,6 +30,7 @@ function showRecomendations(param) {
         h2.textContent = `${el.bookName}`;
         h2.className = 'div__span-fontSize';
         div__book__Container.append(h2);
+        console.log(h2);
         const image = document.createElement('img');
         image.src = `${el.image}`;
         image.className = "image_size";
@@ -46,6 +47,7 @@ function showRecomendations(param) {
         const button = document.createElement('button');
         button.textContent = 'Conectar con el vendedor por WhatsApp';
         div__book__buy.append(button);
+        console.log(div__book__buy);
         section__recomendations.append(div__book__Container, div__book__Resume, div__book__buy);
         container.push(section__recomendations);
     });
