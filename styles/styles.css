@@ -226,3 +226,18 @@ span {
     background-color: #dee4fe;
     margin-left: 37px;
 }
+
+.div__book__Container {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background-color: red;
+}
+
+.h2__search--size {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    background-color: red;
+    font-size: var(--font);
+}
