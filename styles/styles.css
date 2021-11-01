@@ -71,7 +71,7 @@ h1 {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    height: 659px;
+    height: 786px;
     flex-direction: column;
 }
 
@@ -80,6 +80,7 @@ h2 {
     font-size: 1.7rem;
 }
 .section_explore {
+    margin-top: 692px;
     margin-left: 12px;
     width: 90%;
     height: 500px;
@@ -227,12 +228,7 @@ span {
     margin-left: 37px;
 }
 
-.div__book__Container {
-    display: flex;
-    justify-content: center;
-    height: 300px;
-    background-color: red;
-}
+
 
 .h2__search--size {
     display: flex;
@@ -240,4 +236,170 @@ span {
     position: absolute;
     background-color: red;
     font-size: var(--font);
+}
+
+.section_categories {
+    z-index: 1;
+    border-radius: 20px 20px 20px 20px;
+    height: 614px;
+    margin-bottom: 135px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.div__categories--container {
+    z-index: 2;
+    margin-top: 110px;
+    width: 100%;
+    height: 460px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+}
+
+.div__categorie--empresa {
+   
+
+}
+
+
+
+
+
+.div__button--size {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 51px;
+    margin-left: 20px;
+    width: 309px;
+    height: 200px;
+    background-color: beige;
+    border-radius: 10px;
+    
+}
+
+.button__categorie--empresa {
+
+    background-image: url(https://unienceproduction-images-dhnw29xkhb2o.s3.amazonaws.com/7255e86d74da0f860a70aace85ca79f5246821649ed);
+    background-repeat: no-repeat;
+    background-size: 330px 200px;
+    background-position-x: -20px;
+    border-style: none;
+    box-shadow: 10px 0px 43px -9px rgba(66, 68, 78, 0.55);
+}
+
+.div__individualCategory--size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37px;
+    width: 140px;
+    border-radius: 30px;
+    opacity: 88%;
+
+}
+
+.div__individualCategory--size:hover{
+    transform: scale(1.2, 1.2);
+    transform: translate(0px, -130px )
+}
+
+
+.span__individualCategory {
+    font-size: 18px;
+    background-color: #fafafa;
+
+}
+.books_From_category {
+    height: 615px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    background-color: #2979c0;
+    padding-top: 30px;
+    width: 100%;
+    margin-top: 65px;
+} 
+
+.section__books {
+    background-color: #dee4fe;
+    display: flex;
+    justify-content: center;
+    width: 313px;
+    height: 94%;
+    margin-right: 24px;
+    margin-left: 23px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.div__book__Container--Fromcategories {
+    z-index: 2;
+    background-color: #fafafa;
+    width: 254px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 223px;
+    margin-top: 36px;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: -58px;
+    position: absolute;
+    text-align: center;
+    box-shadow: 1px 25px 17px 2px rgba(0, 0, 0, 0.116);
+}
+
+.div__bookTitle {
+    font-size: 15px;
+    margin-top: -17px;
+    margin-bottom: 19px;
+}
+
+.bookImage_size {
+    width: 117px;
+    height: 147px;
+    -webkit-box-shadow: 5px 14px 19px 8px rgba(0,0,0,0.18); 
+    box-shadow: 5px 14px 19px 8px rgba(0, 0, 0, 0.116);
+}
+.div__book__Resume--fromCategories {
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    margin-left: 28px;
+    padding: 9px;
+    height: 164px;
+    width: 243px;
+    background-color: #fafafa;
+    margin-top: 273px;
+    margin-right: 29px;
+    border-radius: 5px;
+}
+
+.div__book__buy--fromCategories {
+    width: 197px;
+    height: 60px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    margin-top: 463px;
+    margin-right: 9px;
+    position: absolute;
+    justify-content: center;
+    border-radius: 5px;
+}
+  
+.div__book__buy--fromCategories > button {
+      width: 170px;
+      height: 40px;
+      background-color: #125462; /* Green */
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 8px;
 }

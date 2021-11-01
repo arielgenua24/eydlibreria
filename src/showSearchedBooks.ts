@@ -88,8 +88,10 @@ const searchBar:any = document.getElementById('searchBar');
     
     if(userText.length == 0) {
 
+    
+
         father_node.removeChild(search_section)
-        search_section__Container.pop();
+        search_section__Container.pop(); 
 
 
 

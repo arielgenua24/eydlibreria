@@ -16,11 +16,12 @@ const search_section = document.createElement('section');
 search_section.className = 'search_section';
 let counter = 0;
 function openSearchWindow(param) {
+    const div__book__Container = document.createElement('div');
     const div__text__container = document.createElement('div');
     const h2 = document.createElement('h2');
     h2.textContent = `Tu busqueda numero ${counter} es:`;
+    h2.className = 'h2__search--size';
     div__text__container.appendChild(h2);
-    const div__book__Container = document.createElement('div');
     if (search_section__Container.length < 1) {
         search_section__Container.push(search_section);
         father_node.appendChild(search_section);
