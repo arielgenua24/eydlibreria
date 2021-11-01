@@ -22,13 +22,6 @@ exports.booksCategories = booksCategories;
 const Empresa = new booksCategories('Empresa', ['Emprendimiento', 'start-ups', 'Servicios', 'Gestion']);
 exports.Empresa = Empresa;
 Empresa.addBook([books_1.laExperienciaDelCliente, books_1.elEstiloVirgin, books_1.elModeloToyota, books_1.nuncaTiresLaToalla, books_1.equiposExtremos]);
-console.log(Empresa.recomendations);
-console.log(`Estos han sido los recomendadados
-
-
-
-`);
-console.log(Empresa.books_From_category);
 const Biografias = new booksCategories('Biografias', ['Aprendizaje', 'Historias', 'Conciencia', 'Inspiracion', 'Mentes brillantes']);
 exports.Biografias = Biografias;
 Biografias.addBook([books_1.yoSteveJobs, books_1.SteveJobs]);

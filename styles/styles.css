@@ -258,11 +258,6 @@ span {
     scroll-snap-type: x proximity;
 }
 
-.div__categorie--empresa {
-   
-
-}
-
 
 
 
@@ -361,10 +356,10 @@ span {
 }
 
 .bookImage_size {
-    width: 117px;
+    width: 107px;
     height: 147px;
     -webkit-box-shadow: 5px 14px 19px 8px rgba(0,0,0,0.18); 
-    box-shadow: 5px 14px 19px 8px rgba(0, 0, 0, 0.116);
+    box-shadow: 15px 14px 15px 5px rgba(0, 0, 0, 0.18);
 }
 .div__book__Resume--fromCategories {
     display: flex;
