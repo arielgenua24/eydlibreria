@@ -4,6 +4,7 @@ import {booksCategories, neuroCiencia, desarrolloPersonal,tecnologia,PNL,marketi
 const father_node:any = document.querySelector('.main_section')
 const section_explore:any = document.querySelector('.section_explore')
 const section_categories:any = document.querySelector('.section_categories')
+const section__welcome:any = document.querySelector('.section__welcome')
 
 
 const books_From_category:any = document.createElement('div')
@@ -84,6 +85,8 @@ function add_and_delete_Dom_Elements() {
     father_node.removeChild(section_explore)
     father_node.removeChild(section_categories)
     father_node.appendChild(books_From_category)
+    father_node.removeChild(section__welcome)
+    father_node.styles.height = '670px'
 
 }
 
