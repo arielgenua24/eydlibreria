@@ -86,7 +86,6 @@ function add_and_delete_Dom_Elements() {
     father_node.removeChild(section_categories)
     father_node.appendChild(books_From_category)
     father_node.removeChild(section__welcome)
-    father_node.styles.height = '670px'
 
 }
 
