@@ -13,94 +13,94 @@ let lista = [habitos_para_ser_millonario.id, yoSteveJobs.id, como_hacer_que_la_g
 
 function searchBooks(param:string) {
 
-let userSearch = param;
+   let userSearch = param;
 
-function stringToNumber(bookName:string) {
-   
-   
-   if(bookName.length > 5) {
-      const newBookName = bookName.slice(0,5)
+   function stringToNumber(bookName:string) {
       
-      let bookNameLowerCase = newBookName.toLowerCase()
-
-      let bookStrToArray = [...bookNameLowerCase]
-     
-      let concatNumbers = ``
-  
-      bookStrToArray.forEach(element => {
-         let stringToNumber = element.charCodeAt(0);
+      
+      if(bookName.length > 5) {
+         const newBookName = bookName.slice(0,5)
          
-          concatNumbers += `${stringToNumber}` 
-  
-     });
-     
-     let Id = Number(concatNumbers.slice(0,12))
+         let bookNameLowerCase = newBookName.toLowerCase()
+
+         let bookStrToArray = [...bookNameLowerCase]
+      
+         let concatNumbers = ``
+   
+         bookStrToArray.forEach(element => {
+            let stringToNumber = element.charCodeAt(0);
+            
+            concatNumbers += `${stringToNumber}` 
+   
+      });
+      
+      let Id = Number(concatNumbers.slice(0,12))
 
 
-     return Id
+      return Id
 
-      } else{
+         } else{
 
-      let bookNameLowerCase = bookName.toLowerCase()
+         let bookNameLowerCase = bookName.toLowerCase()
 
-      let bookStrToArray = [...bookNameLowerCase]
-     
-      let concatNumbers = ``
-  
-      bookStrToArray.forEach(element => {
-         let stringToNumber = element.charCodeAt(0);
+         let bookStrToArray = [...bookNameLowerCase]
+      
+         let concatNumbers = ``
+   
+         bookStrToArray.forEach(element => {
+            let stringToNumber = element.charCodeAt(0);
+            
+            concatNumbers += `${stringToNumber}` 
          
-          concatNumbers += `${stringToNumber}` 
-        
-     });
-     
-     let Id = Number(concatNumbers.slice(0,12))
-     
-     return Id
-
-   }
-
-
-};
-
-let userData = stringToNumber(userSearch)
-
-
-
-let listaSorted = lista.sort();
-
-   function binarySearch(lista:number[],comienzo:number,final:number,objetivo:number):any {
-
-      if( comienzo > final) {
-         console.log(`lo siento, tu libro no se ha encontrado`)
-         return false;
-         
-      }
-
-      let medio = Math.round((comienzo + final) / 2) 
-
-      if(lista[medio] == objetivo) {
-         
-         console.log(`felicidade! este es tu libro`)
-         const book = books.filter(element => element.id == lista[medio])
-
-         return book;
-
-
-      } else if(objetivo > lista[medio]) {
-         return binarySearch(lista,medio + 1,final,objetivo)
-
-      }else if(objetivo < lista[medio]) {
-         return binarySearch(lista,comienzo,medio - 1,objetivo)
+      });
+      
+      let Id = Number(concatNumbers.slice(0,12))
+      
+      return Id
 
       }
 
+
+   };
+
+   let userData = stringToNumber(userSearch)
+
+
+
+   let listaSorted = lista.sort();
+
+      function binarySearch(lista:number[],comienzo:number,final:number,objetivo:number):any {
+
+         if( comienzo > final) {
+            console.log(`lo siento, tu libro no se ha encontrado`)
+            return false;
+            
+         }
+
+         let medio = Math.round((comienzo + final) / 2) 
+
+         if(lista[medio] == objetivo) {
+            
+            console.log(`felicidade! este es tu libro`)
+            const book = books.filter(element => element.id == lista[medio])
+
+            return book;
+
+
+         } else if(objetivo > lista[medio]) {
+            return binarySearch(lista,medio + 1,final,objetivo)
+
+         }else if(objetivo < lista[medio]) {
+            return binarySearch(lista,comienzo,medio - 1,objetivo)
+
+         }
+
+      }
+      let x = binarySearch(listaSorted,0,listaSorted.length,userData)
+      return x   
+
+
    }
-   let x = binarySearch(listaSorted,0,listaSorted.length,userData)
-   return x   
-
-
-}
 
 export {searchBooks};
 

@@ -1,6 +1,6 @@
 module.exports = {
     mode: 'production',
-    entry: './src/showInputBar.ts', 
+    entry: './src/index.ts', 
     devtool: 'inline-source-map',
 
     module: {

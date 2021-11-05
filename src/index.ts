@@ -1,8 +1,14 @@
-import {user} from './user';
+import { showBooksFromCategory } from "./showBooksFromCategory";
+import { searchBooks } from "./searchBooks";
+import { show_inputBar } from "./showInputBar";
+import { showSearchedBooks } from "./showSearchedBooks";
+import { userChoicesRecomendations } from "./userChoices";
 
-let event = (param:string):void => {
-    const userBase = new user('ariel', ['none']);
-    userBase.newUserPleasures(param);
-}
+const search__button:any = document.querySelector('.search__button');
 
-event('emprendimiento');
+search__button.addEventListener('click',show_inputBar)
+
+
+showSearchedBooks();
+userChoicesRecomendations();
+showBooksFromCategory();

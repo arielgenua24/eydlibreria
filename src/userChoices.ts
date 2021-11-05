@@ -1,12 +1,12 @@
-import {ShowUserChoicesResume, showRecomendations, finalAppend} from './showRecomendations'
+import { showRecomendations, finalAppend} from './showRecomendations'
 
 import {booksCategories, neuroCiencia, desarrolloPersonal,tecnologia,PNL,marketing,autoayuda,Finanzas,liderazgo,psicologia,Empresa,Biografias} from './booksCategories'
 
 
-export const arrayChoicesSelected: string[] = [];
+const arrayChoicesSelected: string[] = [];
 
 
-function userChoicesRecomendations(){
+export function userChoicesRecomendations(){
 
     const section_div_people__Node:any = document.querySelector('.section_div__people')
     const fatherNode:any = document.querySelector('.section_div_choices')
@@ -17,7 +17,6 @@ function userChoicesRecomendations(){
     endChoicesButton.addEventListener('click', (event:any)=> {
 
         section_div_people__Node.removeChild(fatherNode);
-        ShowUserChoicesResume();
         event.stopPropagation();
         finalAppend()
         
@@ -106,5 +105,5 @@ function userChoicesRecomendations(){
 
 
 }
-userChoicesRecomendations();
+
 

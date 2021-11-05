@@ -1,24 +1,5 @@
-import {booksCategories, neuroCiencia, desarrolloPersonal,tecnologia,PNL,marketing,autoayuda,Finanzas,liderazgo,psicologia,Empresa,Biografias} from './booksCategories';
-
-import {arrayChoicesSelected} from './userChoices'
 
 const section_div_people__Node:any = document.querySelector('.section_div__people')
-
-export function ShowUserChoicesResume(){
-
-    /*
-
-    let div:any = document.createElement('div');
-    div = '';
-
-    arrayChoicesSelected.forEach(element => {
-        div = div + ` ${element} `
-    });
-    section_div_people__Node.append(div);
-*/
-
-    console.log(arrayChoicesSelected)
-}
 
 
 let container:any = [];

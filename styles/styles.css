@@ -120,9 +120,7 @@ h1 {
     margin-left: 160px;
 }
 .section--figure {
-    /*background: #e0d7f8; */
-
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(to right, #3f2b9608, #a8c0ff);
     position: absolute;
     display: flex;
     justify-content: center;
@@ -136,7 +134,29 @@ h1 {
     width: 80%;
     height: 85%;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+/*
+.figure__divBook--size {
+    width: 150px;
+    height: 150px;
+    border-style: none;
+    border-color: black;
+}
+*/
+
+
+.div__span--size {
+    font-size: 3.8rem;
+    color: #acb0c3;
+    border-style: solid;
+    border-color: #acb0c3;
+    border-radius: 20px;
+    border-width: 6px;
+    padding: 7px;
 }
 
 
@@ -260,31 +280,28 @@ span {
 }
 
 .div__book__Container {
-  z-index: 1;
-  margin-left: 20px;
-  background-color: #fafafa;
-  width: 159px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 202px;
-  margin-top: 52px;
-  flex-direction: column;
-  border-radius: 5px;
-  margin-bottom: 20px;
+    padding: 59px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-left: 14px;
+    margin-right: 39px;
 }
 
 
 .div__span-fontSize {
-    font-size: 15px;
-    margin-top: -17px;
+    font-size: 21px;
+    margin-top: -90px;
     margin-bottom: 19px;
 }
 
 .image_size {
-    width:100px;
-    height: 130px;
-    -webkit-box-shadow: 5px 14px 19px 8px rgba(0,0,0,0.18); 
+    width: 130px;
+    height: 160px; 
     box-shadow: 5px 14px 19px 8px rgba(0, 0, 0, 0.116);
 }
 
@@ -326,15 +343,32 @@ span {
 }
 
 .search_section {
-    display: flex;
-    justify-content: center;
+    z-index: 2;
+    align-items: center;
     width: 80%;
     height: 500px;
     background-color: #dee4fe;
     margin-left: 37px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
 }
 
+.div__carrousel--seach {
+    width: 100%;
+    z-index: 1;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
+.div__text__container {
+    margin-top: 40px;
+    width: 154px;
+    position: relative;
+}
 
 .h2__search--size {
     display: flex;
