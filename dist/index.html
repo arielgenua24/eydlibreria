@@ -16,22 +16,27 @@
 <body>
     <header>
         <div class="header_div"> 
-            <div class="div_menu-options__left">
-                <img class="div_img__color" src="https://img.icons8.com/ios-filled/50/000000/xbox-menu.png"/>
-            </div>
 
             <div class="header-h1">
                 <h1>eydlibreria</h1>
             </div> 
             <div class="div_search-options__right">
-                <input id="searchBar"
-                type="text"
-                placeholder="Escribe el nombre del libroq ue estas buscando!" > 
-                </input>
 
-                <img class="div_img__color" src="https://img.icons8.com/ios-filled/50/000000/google-web-search.png"/></div>
+
+                <button class="search__button">
+                </button>
+
+            <input id="searchBar"
+                class="input__search"
+                type="text"
+                placeholder="Escribe el nombre del libro que estas buscando!" > 
+            </input>
+
 
             </div>
+            
+
+
             <div class="search-results">
 
             </div>
@@ -47,26 +52,13 @@
 
                 <figure class="section--figure">
 
-                    <div class="figure__div--right">
-                    
-                        <img class="figure__img--size  img1--size" src="https://images-na.ssl-images-amazon.com/images/I/71e7d9fm8ZL.jpg" alt="Einstein--image">
+                        <div class="div__mainTitle--position">
+
                             
-                        <img  class="figure__img--size img2--size" src="https://images-na.ssl-images-amazon.com/images/I/81VStYnDGrL.jpg" alt="Steve-jobs__walter isac">
-                        
-                        <img  class="figure__img--size img3--size" src="https://m.media-amazon.com/images/I/51f509ZPDwL.jpg" alt="Al estilo virigin">
-
-                        <img  class="figure__img--size img4--size" src="https://contentv2.tap-commerce.com/cover/large/9789877253146_1.jpg?id_com=1113" alt="Padre rico,padre pobre">
-
-                        <img  class="figure__img--size img5--size" src="https://images-na.ssl-images-amazon.com/images/I/71LaKkJVeFL.jpg" alt="Oceano Azul">
-
-                        <img  class="figure__img--size img6--size" src="https://http2.mlstatic.com/D_NQ_NP_2X_988097-MLA46366104100_062021-F.webp" alt="Four">
-
-                        
-                        
 
 
-
-                    </div>
+                        </div>
+                         
                 </figure>
 
             </section>
@@ -84,35 +76,59 @@
 
                     <div class="section_div_choices">
                         
-                    <span>Elije los temas que te gustaria descubrir!</span>
+                    <span class="div__span--position">Elije los temas que te gustaria descubrir!</span>
 
-                        <button id="button_jobs"  type="button">
-                            <span class="span_button-Jobs"> Jobs </span>   
-                        </button>
+                        <div class="div__firstRow--container">
+                            <button id="button_jobs" class="choices__button--position"  type="button">
+                                <span class="span_button-Jobs span__button"> Jobs </span>
+                                  
+                            </button>
+    
+                            <button id="button_tecnologia"
+                            class="choices__button--position"  type="button">
+                                <span class="span_button-Tecnologia span__button"> Tecnologia </span>
+                                   
+                            </button>
+    
+                            <button id="button_RobertKiyosaki"
+                            class="choices__button--position"  type="button">
+                                <span class="span_button-RobertKiyosaki span__button"> Robert Kiyosaki </span>
+                                
+                            </button>
 
-                        <button id="button_tecnologia"  type="button">
-                            <span class="span_button-Tecnologia"> Tecnologia </span>    
-                        </button>
+                        </div>
 
-                        <button id="button_RobertKiyosaki"  type="button">
-                            <span class="span_button-RobertKiyosaki"> Robert Kiyosaki </span>
-                        </button>
+                        <div class="div__secondRow--container">
 
-                        <button id="button_Marketing"  type="button">
-                            <span class="span_button-Marketing"> Marketing </span>
-                        </button>
+                                <button id="button_marketing"
+                            class="choices__button--position"  type="button">
+                                <span class="span_button-Marketing span__button"> Marketing </span>
+                                
+                            </button>
 
-                        <button id="button_Psicologia"  type="button">
-                            <span class="span_button-Psicologia"> Psicologia </span>  
-                        </button>
+                            <button id="button_Psicologia"
+                            class="choices__button--position"  type="button">
+                                <span class="span_button-Psicologia span__button"> Psicologia </span>
+                                  
+                            </button>
 
-                        <button id="button_empresas"  type="button">
-                            <span class="span_button-Empresas"> Empresas </span>
-                        </button> 
+                            <button id="button_empresas"
+                            class="choices__button--position"  type="button">
+                                <span class="span_button-Empresas span__button"> Empresas </span>
+                                
+                            </button> 
 
-                        <button id="button_endChoices"  type="button">
-                            <span class="span_button-endChocies"> Listo! </span>
-                        </button> 
+                            
+
+                            
+                        </div>                        
+                        
+                        <button id="button_endChoices"
+                            class="choices__button--position"  type="button">
+                                <span class="span_button-endChocies span__button"> Listo! </span>
+                                
+                            </button> 
+
 
                     </div>
                     

@@ -1,6 +1,6 @@
 module.exports = {
     mode: 'production',
-    entry: './src/showBooksFromCategory.ts', 
+    entry: './src/showInputBar.ts', 
     devtool: 'inline-source-map',
 
     module: {
