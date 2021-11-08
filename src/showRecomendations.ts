@@ -33,9 +33,21 @@ export function showRecomendations(param:any) {
     const div__book__Resume:any = document.createElement('div')
     div__book__Resume.className = 'div__book__Resume';
     const paragraph: any = document.createElement("p")
+    
     paragraph.textContent = `${el.description}`
-    div__book__Resume.append(paragraph)
-    console.log(paragraph)
+    console.log(paragraph.textContent)
+    if(paragraph.length > 49) {
+       const oldParagraph  = paragraph;
+       const lessParagraph = oldParagraph.slice(0,50)
+       const newParagraph = `${lessParagraph}...` 
+        div__book__Resume.append(newParagraph)
+
+    } else {
+        div__book__Resume.append(paragraph)
+        console.log(paragraph)
+    }
+
+    
 
     
 

@@ -59,7 +59,7 @@ export function showSearchedBooks() {
             param.forEach((el:any) => {
                 
                 console.log(el)
-                div__book__Container.className = 'div__book__Container'
+                div__book__Container.className = 'div__Searchedbook__Container'
 
                 const paragraph = document.createElement('p')
                 paragraph.className = 'div__span-fontSize'

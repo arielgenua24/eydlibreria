@@ -107,7 +107,7 @@ h1 {
 
 .section__welcome {
     display: flex;
-    margin-top: 1124px;
+    margin-top: 1164px;
     position: static;
     width: 100%;
     z-index: 3;
@@ -120,24 +120,24 @@ h1 {
     margin-left: 160px;
 }
 .section--figure {
-    background: linear-gradient(to right, #3f2b9608, #a8c0ff);
+    background-color: white;
+    /* background: linear-gradient(to right, #3f2b9608, #a8c0ff); */
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;    
-    height: 500px;
+    width: 100%;
+    height: 671px;
 }
 
 .div__mainTitle--position {
-    background-color: #f5f5f7;
-    width: 80%;
-    height: 85%;
+    background-color: #f1f1f1;
+    width: 93%;
+    height: 89%;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 /*
 .figure__divBook--size {
@@ -147,16 +147,102 @@ h1 {
     border-color: black;
 }
 */
+.div__img--mainbooks {
+    height: 164px;
+    width: 102px;
+    position: absolute;
+}
+
+
+.figure__div--mainBooks {
+    margin-top: -23px;
+    height: 52%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+
+.book-container {
+    width: 130px;
+    height: 180px;
+    background-color: #f6f6ea;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  
+  
+img{
+    border-radius: 8px;
+    width: 100px;
+    height: 150px;
+    box-shadow: 3px 10px 10px -10px ;
+  }
+  
+span {
+    padding: 10px;
+    position: absolute;
+    margin-top: 228px;
+    background-color: #f1f1f1;
+    border-radius: 20px;  
+  }
+  
+.figure__div {
+    background-img: url("https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1535115320l/40121378._SY475_.jpg")
+  }
+
+
+.img__steve {
+    z-index: 3;
+    height: 167px;
+    width: 118px;
+
+}
+.img__robin {
+    margin: 160px 280px 7px 10px;
+    height: 141px;
+    width: 95px;
+
+}
+.img__habitosAtomicos {
+    margin: 308px 9px 9px 3px;
+    position: absolute;
+    height: 101px;
+    width: 101px;
+
+}
+.img__four{
+    z-index: 2;
+    height: 227px;
+    width: 128px;
+    margin: 115px 8px 4px 202px;
+}
+
+
+
+
 
 
 .div__span--size {
+    font-size: 72px;
+    background: rgb(249,162,131);
+    background: linear-gradient(90deg, rgba(249,162,131,1) 0%, rgba(237,92,178,1) 37%, rgba(200,0,255,1) 62%, rgba(0,212,255,1) 98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    position: absolute;
     font-size: 3.8rem;
-    color: #acb0c3;
+    color: #e7e7ff;
     border-style: solid;
-    border-color: #acb0c3;
+    /* border-color: #acb0c3; */
     border-radius: 20px;
     border-width: 6px;
     padding: 7px;
+    margin-top: -492px;
 }
 
 
@@ -165,10 +251,10 @@ h2 {
     font-size: 1.7rem;
 }
 .section_explore {
-    margin-top: 513px;
+    margin-top: 691px;
     margin-left: 12px;
     width: 90%;
-    height: 500px;
+    height: 500px
 }
 
 .hr {
@@ -280,22 +366,40 @@ span {
 }
 
 .div__book__Container {
-    padding: 59px;
+    padding: 20px;
     background-color: #fafafa;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85%;
+    height: 230px;
     flex-direction: column;
     border-radius: 5px;
-    margin-left: 14px;
-    margin-right: 39px;
+    margin-left: 15px;
+    margin-right: -19px;
+    margin-top: 42px;
+}
+
+.div__Searchedbook__Container {
+    padding: 20px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 338px;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 17px;
+    margin-top: 42px;
+    
+
+
 }
 
 
 .div__span-fontSize {
-    font-size: 21px;
-    margin-top: -90px;
+    font-size: 17px;
+    margin-top: -12px;
     margin-bottom: 19px;
 }
 
@@ -306,17 +410,17 @@ span {
 }
 
 .div__book__Resume {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin-left: 28px;
-  padding: 9px;
-  height: 230px;
-  width: 174px;
-  background-color: #fafafa;
-  margin-top: 40px;
-  margin-right: 29px;
-  border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 28px;
+    padding: 9px;
+    height: 230px;
+    width: 174px;
+    background-color: #fafafa;
+    margin-top: 40px;
+    margin-right: 17px;
+    border-radius: 5px;
 }
 .div__book__buy {
   width: 300px;
@@ -382,7 +486,7 @@ span {
     z-index: 1;
     border-radius: 20px 20px 20px 20px;
     height: 614px;
-    margin-bottom: 135px;
+    margin-bottom: -2px;
     display: flex;
     width: 100%;
     flex-direction: column;

@@ -1,22 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.finalAppend = exports.showRecomendations = exports.ShowUserChoicesResume = void 0;
-const userChoices_1 = require("./userChoices");
+exports.finalAppend = exports.showRecomendations = void 0;
 const section_div_people__Node = document.querySelector('.section_div__people');
-function ShowUserChoicesResume() {
-    /*
-
-    let div:any = document.createElement('div');
-    div = '';
-
-    arrayChoicesSelected.forEach(element => {
-        div = div + ` ${element} `
-    });
-    section_div_people__Node.append(div);
-*/
-    console.log(userChoices_1.arrayChoicesSelected);
-}
-exports.ShowUserChoicesResume = ShowUserChoicesResume;
 let container = [];
 function showRecomendations(param) {
     const array = param;
