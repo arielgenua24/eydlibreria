@@ -126,20 +126,93 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 100%;    
-    height: 500px;
+    height: 597px;
 }
 
 .div__mainTitle--position {
     background-color: #f5f5f7;
-    width: 80%;
-    height: 85%;
+    width: 90%;
+    height: 94%;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 }
+.div__images--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 130px;
+    border-radius: 15px;
+    background-color: #ccc3bd;
+    margin-left: 15px;
+}
+
+
+.div__mainImages {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.img__text--container {
+    width: 131px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color:#a8c0ff;
+}
+
+.img__text--container > span {
+    background-color:#a8c0ff;   
+}
+.div__homeElementsContainer  {
+    margin-right: 144px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.div__homeContent--container {
+    position: absolute;
+    width: 1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.div__homecontent1{
+    margin-top: -238px;
+    margin-left: 31px;
+}
+.div__homecontent2{
+    margin-top: 362px;
+    z-index: 2;
+
+}
+.div__homecontent3{
+    margin-left: -214px;
+    
+}
+.div__homecontent4{
+    margin-top: 41px;
+    margin-left: 253px;
+    z-index: 3;
+}
+
+
+
+
 /*
+
 .figure__divBook--size {
     width: 150px;
     height: 150px;
@@ -165,7 +238,7 @@ h2 {
     font-size: 1.7rem;
 }
 .section_explore {
-    margin-top: 513px;
+    margin-top: 632px;
     margin-left: 12px;
     width: 90%;
     height: 500px;
@@ -382,7 +455,6 @@ span {
     z-index: 1;
     border-radius: 20px 20px 20px 20px;
     height: 614px;
-    margin-bottom: 135px;
     display: flex;
     width: 100%;
     flex-direction: column;
