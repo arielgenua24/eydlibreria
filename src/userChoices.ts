@@ -65,7 +65,7 @@ export function userChoicesRecomendations(){
 
     const marketingRecomendations:any = document.querySelector('#button_Marketing');
 
-    marketingRecomendations.addEventListener('click', (event:any) => {
+   /* marketingRecomendations.addEventListener('click', (event:any) => {
 
         const span_Marketing:any = document.querySelector('.span_button-Marketing');
         arrayChoicesSelected.push(span_Marketing.innerHTML);
@@ -74,7 +74,7 @@ export function userChoicesRecomendations(){
         showRecomendations(marketing.recomendations)
         
 
-    })
+    }) */
 
     const psicologiaRecomendations:any = document.querySelector('#button_Psicologia');
 
