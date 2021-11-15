@@ -10,7 +10,8 @@ export function userChoicesRecomendations(){
 
     const section_div_people__Node:any = document.querySelector('.section_div__people')
     const fatherNode:any = document.querySelector('.section_div_choices')
-        
+    const firstRowFather:any =document.querySelector('.div__firstRow--container')  
+    const secondRowFather:any =document.querySelector('.div__secondRow--container')     
 
     const endChoicesButton:any = document.querySelector('#button_endChoices')
 
@@ -30,7 +31,7 @@ export function userChoicesRecomendations(){
 
         const span_jobs:any = document.querySelector('.span_button-Jobs');
         arrayChoicesSelected.push(span_jobs.innerHTML);
-        fatherNode.removeChild(jobsRecomendations)
+        firstRowFather.removeChild(jobsRecomendations)
         event.stopPropagation();
 
         showRecomendations(Biografias.recomendations)
@@ -44,7 +45,7 @@ export function userChoicesRecomendations(){
 
         const span_tecnologia:any = document.querySelector('.span_button-Tecnologia');
         arrayChoicesSelected.push(span_tecnologia.innerHTML);
-        fatherNode.removeChild(tecnologiaRecomendations)
+        firstRowFather.removeChild(tecnologiaRecomendations)
         event.stopPropagation();
         showRecomendations(tecnologia.recomendations)
         
@@ -56,7 +57,7 @@ export function userChoicesRecomendations(){
 
         const span_RobertKiyosaki:any = document.querySelector('.span_button-RobertKiyosaki');
         arrayChoicesSelected.push(span_RobertKiyosaki.innerHTML);
-        fatherNode.removeChild(RobertKiyosakiRecomendations)
+        firstRowFather.removeChild(RobertKiyosakiRecomendations)
         event.stopPropagation();
         showRecomendations(Finanzas.recomendations)
         
@@ -69,7 +70,7 @@ export function userChoicesRecomendations(){
 
         const span_Marketing:any = document.querySelector('.span_button-Marketing');
         arrayChoicesSelected.push(span_Marketing.innerHTML);
-        fatherNode.removeChild(marketingRecomendations)
+        secondRowFather.removeChild(marketingRecomendations)
         event.stopPropagation();
         showRecomendations(marketing.recomendations)
         
@@ -82,7 +83,7 @@ export function userChoicesRecomendations(){
 
         const span_Psicologia:any = document.querySelector('.span_button-Psicologia');
         arrayChoicesSelected.push(span_Psicologia.innerHTML);
-        fatherNode.removeChild(psicologiaRecomendations)
+        secondRowFather.removeChild(psicologiaRecomendations)
         event.stopPropagation();
         showRecomendations(psicologia.recomendations)
         
@@ -95,7 +96,7 @@ export function userChoicesRecomendations(){
 
         const span_Empresas:any = document.querySelector('.span_button-Empresas');
         arrayChoicesSelected.push(span_Empresas.innerHTML);
-        fatherNode.removeChild(empresasRecomendations)
+        secondRowFather.removeChild(empresasRecomendations)
         event.stopPropagation();
         showRecomendations(Empresa.recomendations)
         

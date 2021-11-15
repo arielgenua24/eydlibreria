@@ -120,8 +120,7 @@ h1 {
     margin-left: 160px;
 }
 .section--figure {
-    background: linear-gradient(to right, #3f2b9608, #a8c0ff);
-    position: absolute;
+    background: linear-gradient(to right, #3f2b9608, #edeef7);    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,6 +286,7 @@ h1 {
 
 
 .section__span--knowMinds {
+    opacity: 56%;
     font-size: 2.5rem;
     padding-bottom: 20px;
     margin-top: -58px;
@@ -392,15 +392,14 @@ h1 {
 }
 
 
-
-
-
-
-
-
 h2 {
-    color: var(--fifthColor);
     font-size: 1.7rem;
+    background: rgb(254,110,122);
+    background: linear-gradient(
+54deg
+, rgba(254,110,122,1) 0%, rgba(249,89,174,1) 13%, rgba(243,63,244,1) 26%, rgba(157,42,245,1) 74%, rgba(116,44,252,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .section_explore {
     margin-top: 1132px;
@@ -529,6 +528,20 @@ span {
     margin-left: 14px;
     margin-right: 39px;
 }
+.div__searchedBook__Container {
+    padding: 59px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-left: 14px;
+    margin-right: 39px;
+
+}
+
 
 
 .div__span-fontSize {
@@ -583,10 +596,10 @@ span {
 .search_section {
     z-index: 2;
     align-items: center;
-    width: 80%;
+    width: 90%;
     height: 500px;
     background-color: #dee4fe;
-    margin-left: 37px;
+    margin-left: 19px;
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x proximity;

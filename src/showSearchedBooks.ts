@@ -8,6 +8,7 @@ export function showSearchedBooks() {
     const section_explore:any = document.querySelector('.section_explore');
     const section_categories:any = document.querySelector('.section_categories')
     const section_all:any = document.querySelector('.section_all')
+    const section__knowMinds:any  = document.querySelector('.section__knowMinds')
      
 
     function delete_section_explore() {
@@ -16,6 +17,7 @@ export function showSearchedBooks() {
         father_node.removeChild(section__welcome);
         father_node.removeChild(section_categories);
         father_node.removeChild(section_all);
+        father_node.removeChild(section__knowMinds);
             
         
     } 
@@ -25,17 +27,20 @@ export function showSearchedBooks() {
     const search_section = document.createElement('section')
     search_section.className = 'search_section'
 
-    let counter = 0;
+    let counter = 1;
 
 
      function openSearchWindow(param:any[]) {
-            const div__book__Container = document.createElement('div')
+            const div__searchedBook__Container = document.createElement('div')
+            div__searchedBook__Container.className = 'div__searchedBook__Container';
+
+            father_node.style.height = '715px';
 
 
             const div__text__container = document.createElement('div')
             div__text__container.className = 'div__text__container'
             const h2 = document.createElement('h2')
-            h2.textContent = `Tu busqueda numero ${counter} es:`
+            h2.textContent = `Esta ha sido tu busqueda numero ${counter} :`
             h2.className = 'h2__search--size'
             div__text__container.appendChild(h2)
 
@@ -46,12 +51,12 @@ export function showSearchedBooks() {
 
             search_section__Container.push(search_section)
             father_node.appendChild(search_section)
-            search_section.appendChild(div__book__Container)
+            search_section.appendChild(div__searchedBook__Container)
 
         }
             console.log(`ESTOY ELIMINANDOOOO`)
                 
-            search_section.removeChild(div__book__Container)
+            search_section.removeChild(div__searchedBook__Container)
 
             father_node.removeChild(search_section)
                 
@@ -59,7 +64,6 @@ export function showSearchedBooks() {
             param.forEach((el:any) => {
                 
                 console.log(el)
-                div__book__Container.className = 'div__book__Container'
 
                 const paragraph = document.createElement('p')
                 paragraph.className = 'div__span-fontSize'
@@ -69,12 +73,12 @@ export function showSearchedBooks() {
                 image.src = `${el.image}`
                 image.className = "image_size"
 
-                div__book__Container.append(paragraph,image,div__text__container)
+                div__searchedBook__Container.append(paragraph,image,div__text__container)
                 console.log(el)
             });
 
             father_node.appendChild(search_section)
-            search_section.append(div__book__Container)
+            search_section.append(div__searchedBook__Container)
             
             
             

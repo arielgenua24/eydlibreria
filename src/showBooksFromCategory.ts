@@ -6,6 +6,7 @@ export function showBooksFromCategory() {
     const section_explore:any = document.querySelector('.section_explore')
     const section_categories:any = document.querySelector('.section_categories')
     const section__welcome:any = document.querySelector('.section__welcome')
+    const section__knowMinds:any = document.querySelector('.section__knowMinds');
 
 
     const books_From_category:any = document.createElement('div')
@@ -83,10 +84,15 @@ export function showBooksFromCategory() {
     }
 
     function add_and_delete_Dom_Elements() {
+
+        father_node.style.height = '710px'
+
         father_node.removeChild(section_explore)
         father_node.removeChild(section_categories)
         father_node.appendChild(books_From_category)
         father_node.removeChild(section__welcome)
+        father_node.removeChild(section__knowMinds)
+
 
     }
 
