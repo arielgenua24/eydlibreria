@@ -516,18 +516,6 @@ span {
     border-radius: 15px;
 }
 
-.div__book__Container {
-    padding: 59px;
-    background-color: #fafafa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85%;
-    flex-direction: column;
-    border-radius: 5px;
-    margin-left: 14px;
-    margin-right: 39px;
-}
 .div__searchedBook__Container {
     padding: 59px;
     background-color: #fafafa;
@@ -556,19 +544,50 @@ span {
     box-shadow: 5px 14px 19px 8px rgba(0, 0, 0, 0.116);
 }
 
-.div__book__Resume {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin-left: 28px;
-  padding: 9px;
-  height: 230px;
-  width: 174px;
-  background-color: #fafafa;
-  margin-top: 40px;
-  margin-right: 29px;
-  border-radius: 5px;
+
+.div__book__Container {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 74%;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-left: 9px;
+    margin-right: -4px;
+    margin-top: 15px;
+    padding: 76px 15px 4px 15px;
 }
+
+
+
+.div__book__Resume {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 15px;
+    padding: 9px;
+    height: 230px;
+    width: 174px;
+    background-color: #fafafa;
+    margin-top: 40px;
+    margin-right: 23px;
+    border-radius: 5px;
+}
+.instagramLink {
+    width: 86px;
+    height: 43px;
+    background-color: #dee4fe;
+    color: #393737;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    margin-top: 170px;
+    border-radius: 18px;
+}
+
+
 .div__book__buy {
   width: 300px;
   height: 60px;
@@ -667,15 +686,60 @@ span {
     
 }
 
-.button__categorie--empresa {
+.div__button--size {
 
-    background-image: url(https://unienceproduction-images-dhnw29xkhb2o.s3.amazonaws.com/7255e86d74da0f860a70aace85ca79f5246821649ed);
+    
     background-repeat: no-repeat;
     background-size: 330px 200px;
     background-position-x: -20px;
     border-style: none;
     box-shadow: 10px 0px 43px -9px rgba(66, 68, 78, 0.55);
 }
+
+.button__categorie--empresa {
+    background-image: url(https://about.fb.com/ltam/wp-content/uploads/sites/14/2021/10/06_211025_CompanyEC_16x9__30fps__1080-1.gif?fit=1920%2C1080);
+}
+
+.button__categorie--biografias {
+    background-image: url(https://cdn.forbes.co/2020/04/M%C3%A1s-ricos-1280x720-1.jpg);
+}
+.button__categorie--Finanzas {
+    background-image: url(https://ca-times.brightspotcdn.com/dims4/default/2981639/2147483647/strip/true/crop/5760x3840+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fe6%2Fac%2Fa95fde5c3ecb5900905c526bf2ad%2F1d998fa82ee24f88b2c75ddd758a9d7b);
+
+}
+.button__categorie--liderazgo {
+    background-image: url(https://www.altonivel.com.mx/wp-content/uploads/2018/04/lideres-fortune.jpg);
+
+}
+.button__categorie--psicologia {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbnRcARsFWr7161wiCCXRrfkeNrc4bBnfGzQ&usqp=CAU);
+
+}
+.button__categorie--autoayuda{
+    background-image: url(https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2014/05/15/14001454333158.jpg);
+
+}
+.button__categorie--marketing {
+    background-image: url(https://impactaacademy.com/wp-content/uploads/2021/01/7-pasos-para-escribir-un-plan-de-marketing-exitoso.jpg);
+
+}
+.button__categorie--PNL {
+    background-image: url(https://grupo-pya.com/wp-content/uploads/2021/10/pnl-coaching.jpg);
+
+}
+.button__categorie--desarrolloPersonal {
+    background-image: url(https://cdn.forbes.co/2020/04/M%C3%A1s-ricos-1280x720-1.jpg);
+
+}
+.button__categorie--tecnologia {
+    background-image: url(https://cdn.forbes.co/2020/04/M%C3%A1s-ricos-1280x720-1.jpg);
+
+}
+.button__categorie--neuroCiencia{
+    background-image: url(https://cdn.forbes.co/2020/04/M%C3%A1s-ricos-1280x720-1.jpg);
+
+}
+
 
 .div__individualCategory--size{
     display: flex;
@@ -685,6 +749,7 @@ span {
     width: 140px;
     border-radius: 30px;
     opacity: 88%;
+    margin-bottom: 133px;
 
 }
 
@@ -709,6 +774,10 @@ span {
     width: 100%;
     margin-top: 65px;
 } 
+
+
+
+
 
 .section__books {
     background-color: #f5f6f9;

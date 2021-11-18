@@ -34,7 +34,36 @@ export function showRecomendations(param:any) {
     div__book__Resume.className = 'div__book__Resume';
     const paragraph: any = document.createElement("p")
     paragraph.textContent = `${el.description}`
-    div__book__Resume.append(paragraph)
+    console.log(paragraph.length)
+
+    if(paragraph.length > 49) {
+        console.log(paragraph.length)
+        const oldParagraph  = paragraph;
+        const lessParagraph = oldParagraph.slice(0,50)
+        const newParagraph = `${lessParagraph}...` 
+        div__book__Resume.append(newParagraph)
+        console.log(paragraph.length)
+        console.log(newParagraph.length)
+
+
+ 
+     } else {
+         div__book__Resume.append(paragraph)
+         console.log(paragraph.length)
+ 
+
+     }
+
+
+
+
+    const instagramLink = document.createElement('a')
+    instagramLink.className = 'instagramLink'
+    instagramLink.href = 'https://www.instagram.com/eydlibreria/'
+    instagramLink.innerHTML = 'Ver mas en instagram'
+
+
+    div__book__Resume.append(instagramLink)
     console.log(paragraph)
 
     
