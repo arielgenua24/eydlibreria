@@ -9,15 +9,21 @@ export function showSearchedBooks() {
     const section_categories:any = document.querySelector('.section_categories')
     const section_all:any = document.querySelector('.section_all')
     const section__knowMinds:any  = document.querySelector('.section__knowMinds')
+    const books__from__category:any = document.querySelector('.books_From_category')
+    const añadidosRecientemente:any = document.querySelector('.añadidosRecientemente')
+    
      
 
     function delete_section_explore() {
         
+      
         father_node.removeChild(section_explore);
         father_node.removeChild(section__welcome);
         father_node.removeChild(section_categories);
         father_node.removeChild(section_all);
         father_node.removeChild(section__knowMinds);
+        father_node.removeChild(añadidosRecientemente);
+        
             
         
     } 
@@ -31,6 +37,8 @@ export function showSearchedBooks() {
 
 
      function openSearchWindow(param:any[]) {
+
+
             const div__searchedBook__Container = document.createElement('div')
             div__searchedBook__Container.className = 'div__searchedBook__Container';
 
@@ -73,7 +81,16 @@ export function showSearchedBooks() {
                 image.src = `${el.image}`
                 image.className = "image_size"
 
-                div__searchedBook__Container.append(paragraph,image,div__text__container)
+                const div__book__buy: any = document.createElement('div')
+                div__book__buy.className = "div__book__buy--fromSearchedBooks"
+                const buttonWhatsapp = document.createElement('a')
+                buttonWhatsapp.href = `https://web.whatsapp.com/send?phone=543512264081?text=Me%20interesa%20el%20libro%20${el.bookName}`
+                buttonWhatsapp.target = '_blank'
+                buttonWhatsapp.textContent = 'Conectar con el vendedor por WhatsApp'
+                div__book__buy.append(buttonWhatsapp)
+                console.log(div__book__buy)
+
+                div__searchedBook__Container.append(paragraph,image,div__text__container,div__book__buy)
                 console.log(el)
             });
 

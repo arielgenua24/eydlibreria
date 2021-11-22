@@ -1,22 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.finalAppend = exports.showRecomendations = exports.ShowUserChoicesResume = void 0;
-const userChoices_1 = require("./userChoices");
+exports.finalAppend = exports.showRecomendations = void 0;
 const section_div_people__Node = document.querySelector('.section_div__people');
-function ShowUserChoicesResume() {
-    /*
-
-    let div:any = document.createElement('div');
-    div = '';
-
-    arrayChoicesSelected.forEach(element => {
-        div = div + ` ${element} `
-    });
-    section_div_people__Node.append(div);
-*/
-    console.log(userChoices_1.arrayChoicesSelected);
-}
-exports.ShowUserChoicesResume = ShowUserChoicesResume;
 let container = [];
 function showRecomendations(param) {
     const array = param;
@@ -40,7 +25,25 @@ function showRecomendations(param) {
         div__book__Resume.className = 'div__book__Resume';
         const paragraph = document.createElement("p");
         paragraph.textContent = `${el.description}`;
-        div__book__Resume.append(paragraph);
+        console.log(paragraph.length);
+        if (paragraph.length > 49) {
+            console.log(paragraph.length);
+            const oldParagraph = paragraph;
+            const lessParagraph = oldParagraph.slice(0, 50);
+            const newParagraph = `${lessParagraph}...`;
+            div__book__Resume.append(newParagraph);
+            console.log(paragraph.length);
+            console.log(newParagraph.length);
+        }
+        else {
+            div__book__Resume.append(paragraph);
+            console.log(paragraph.length);
+        }
+        const instagramLink = document.createElement('a');
+        instagramLink.className = 'instagramLink';
+        instagramLink.href = 'https://www.instagram.com/eydlibreria/';
+        instagramLink.innerHTML = '<img class="instagram__icon" src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png"/>';
+        div__book__Resume.append(instagramLink);
         console.log(paragraph);
         const div__book__buy = document.createElement('div');
         div__book__buy.className = "div__book__buy";

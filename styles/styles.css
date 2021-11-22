@@ -99,7 +99,7 @@ h1 {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    height: 1200px;
+    height: 2801px;
     flex-direction: column;
 }
 
@@ -107,7 +107,7 @@ h1 {
 
 .section__welcome {
     display: flex;
-    margin-top: 1124px;
+    margin-top: 202px;
     position: static;
     width: 100%;
     z-index: 3;
@@ -280,7 +280,7 @@ h1 {
     background-color: bisque;
     position: absolute;
     width: 100%;
-    margin-top: 619px;
+    margin-top: -999px;
     margin-left: -1px;
 }
 
@@ -401,8 +401,82 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.añadidosRecientemente {
+    width: 100%;
+    background-color: #eeeef7;
+    display: flex;
+    flex-direction: column;
+    height: 805px;
+    top: 1104px;
+    position: absolute;
+}
+.books1,.books2, .books3  {
+    z-index: 1;
+    margin-top: 30px;
+    margin-left: 0px;
+    height: 220px;
+    width: 100%;
+    background-color: white;
+    display: -webkit-inline-box;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: none;
+    scroll-snap-type: x proximity;
+}
+.bookAdded {
+    position: relative;
+    margin: 0px 10px 5px 0px;
+    height: 170px;
+    width: 170px;
+    border-radius: 3px; 
+}
+.div__container--book {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 140px 40px 0px;
+    background-color: #f1f1f1;
+    margin-right: 19px;
+    margin-left: 7px;
+    border-radius: 8px;
+    height: 169px;
+    width: 308px;
+    margin-top: 20px;
+}
+.bookInformation--container {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    width: 160px;
+    height: 170px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: blue;
+    left: 170px;
+}
+.div__span--bookTitle {
+    margin-top: 10px;
+    z-index: 2;
+    margin-left: 40px;
+    background-color: #f1f1f1;
+}
+.div__a--bookTitle{
+    z-index: 3;
+    margin-top: 121px;
+    margin-left: -45px;
+    width: 80px;
+    padding: 10px;
+    height: 36px;
+    border-radius: 10px;
+    background-color:  #0071e3;
+    color:  #fff; 
+}
+
+
 .section_explore {
-    margin-top: 1132px;
+    margin-top: 1884px;
     margin-left: 12px;
     width: 90%;
     height: 500px;
@@ -562,9 +636,10 @@ span {
 
 
 .div__book__Resume {
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     margin-left: 15px;
     padding: 9px;
     height: 230px;
@@ -575,17 +650,15 @@ span {
     border-radius: 5px;
 }
 .instagramLink {
-    width: 86px;
-    height: 43px;
-    background-color: #dee4fe;
-    color: #393737;
-    display: flex;
-    justify-content: right;
-    align-items: center;
     position: absolute;
     margin-top: 170px;
-    border-radius: 18px;
 }
+
+.instagram__icon {
+    width: 34px;
+    height: 34px;
+}
+
 
 
 .div__book__buy {
@@ -604,7 +677,7 @@ span {
 .div__book__buy > button {
     width: 170px;
     height: 40px;
-    background-color: #125462; /* Green */
+    background-color: #007afe;    
     border: none;
     color: white;
     text-align: center;
@@ -651,7 +724,7 @@ span {
 .section_categories {
     z-index: 1;
     border-radius: 20px 20px 20px 20px;
-    height: 614px;
+    height: 530px;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -720,23 +793,25 @@ span {
 
 }
 .button__categorie--marketing {
-    background-image: url(https://impactaacademy.com/wp-content/uploads/2021/01/7-pasos-para-escribir-un-plan-de-marketing-exitoso.jpg);
-
+    background-image: url(https://images.unsplash.com/photo-1491951931722-5a446214b4e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=767&q=80);
+    background-size: 340px;
+    background-position-x: -30px;
+    background-position-y: -70px;
 }
 .button__categorie--PNL {
     background-image: url(https://grupo-pya.com/wp-content/uploads/2021/10/pnl-coaching.jpg);
 
 }
 .button__categorie--desarrolloPersonal {
-    background-image: url(https://cdn.forbes.co/2020/04/M%C3%A1s-ricos-1280x720-1.jpg);
+    background-image: url(https://images.unsplash.com/photo-1501004318641-b39e6451bec6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80);
 
 }
 .button__categorie--tecnologia {
-    background-image: url(https://cdn.forbes.co/2020/04/M%C3%A1s-ricos-1280x720-1.jpg);
+    background-image: url(https://images.unsplash.com/photo-1632582593957-e28f748ba619?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
 
 }
 .button__categorie--neuroCiencia{
-    background-image: url(https://cdn.forbes.co/2020/04/M%C3%A1s-ricos-1280x720-1.jpg);
+    background-image: url(https://images.unsplash.com/photo-1617791160536-598cf32026fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80);
 
 }
 
@@ -850,10 +925,22 @@ span {
 .div__book__buy--fromCategories > button {
       width: 170px;
       height: 40px;
-      background-color: #125462; /* Green */
+      background-color: #007afe;          
       border: none;
       color: white;
       text-align: center;
       text-decoration: none;
       border-radius: 8px;
 }
+
+.div__book__buy--fromSearchedBooks {
+    position: relative;
+    width: 170px;
+    height: 40px;
+    background-color: #007afe;          
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+} 

@@ -60,7 +60,7 @@ export function showRecomendations(param:any) {
     const instagramLink = document.createElement('a')
     instagramLink.className = 'instagramLink'
     instagramLink.href = 'https://www.instagram.com/eydlibreria/'
-    instagramLink.innerHTML = 'Ver mas en instagram'
+    instagramLink.innerHTML = '<img class="instagram__icon" src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png"/>'
 
 
     div__book__Resume.append(instagramLink)
@@ -74,8 +74,6 @@ export function showRecomendations(param:any) {
     button.textContent = 'Conectar con el vendedor por WhatsApp'
     div__book__buy.append(button)
     console.log(div__book__buy)
-
-
 
     section__recomendations.append(div__book__Container, div__book__Resume,div__book__buy) 
 

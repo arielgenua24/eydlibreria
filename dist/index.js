@@ -1,8 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const user_1 = require("./user");
-let event = (param) => {
-    const userBase = new user_1.user('ariel', ['none']);
-    userBase.newUserPleasures(param);
-};
-event('emprendimiento');
+const showBooksFromCategory_1 = require("./showBooksFromCategory");
+const showInputBar_1 = require("./showInputBar");
+const showSearchedBooks_1 = require("./showSearchedBooks");
+const userChoices_1 = require("./userChoices");
+const search__button = document.querySelector('.search__button');
+search__button.addEventListener('click', showInputBar_1.show_inputBar);
+(0, showSearchedBooks_1.showSearchedBooks)();
+(0, userChoices_1.userChoicesRecomendations)();
+(0, showBooksFromCategory_1.showBooksFromCategory)();

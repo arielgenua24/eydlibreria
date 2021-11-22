@@ -7,6 +7,7 @@ export function showBooksFromCategory() {
     const section_categories:any = document.querySelector('.section_categories')
     const section__welcome:any = document.querySelector('.section__welcome')
     const section__knowMinds:any = document.querySelector('.section__knowMinds');
+    const añadidosRecientemente:any = document.querySelector('.añadidosRecientemente')
 
 
     const books_From_category:any = document.createElement('div')
@@ -64,9 +65,11 @@ export function showBooksFromCategory() {
 
         const div__book__buy: any = document.createElement('div')
         div__book__buy.className = "div__book__buy--fromCategories"
-        const button = document.createElement('button')
-        button.textContent = 'Conectar con el vendedor por WhatsApp'
-        div__book__buy.append(button)
+        const buttonWhatsapp = document.createElement('a')
+        buttonWhatsapp.href = `https://web.whatsapp.com/send?phone=543512264081?text=Me%20interesa%20el%20libro%20${el.bookName}`
+        buttonWhatsapp.target = '_blank'
+        buttonWhatsapp.textContent = 'Conectar con el vendedor por WhatsApp'
+        div__book__buy.append(buttonWhatsapp)
         console.log(div__book__buy)
 
 
@@ -92,6 +95,8 @@ export function showBooksFromCategory() {
         father_node.appendChild(books_From_category)
         father_node.removeChild(section__welcome)
         father_node.removeChild(section__knowMinds)
+        father_node.removeChild(añadidosRecientemente)
+
 
 
     }
