@@ -90,7 +90,13 @@ habitos_para_ser_millonario.setId(habitos_para_ser_millonario.bookName)
 
  const como_hacer_que_la_gente_haga_cosas = new books('Como hacer que la gente haga cosas','Robert Conkin','La clave para convencer,dirigir,motivar,supervisar e influir en los demas','src::',false,'liderazgo')
  como_hacer_que_la_gente_haga_cosas.setId(como_hacer_que_la_gente_haga_cosas.bookName)
- 
+
+
+ const liderazgoCentradoEnPrincpios = new books('Liderazago centrado en princpios','Stephen R. Covey','Covey nos brinda una vigorosa filosofia de la vida que es tambien una garantia de exito en los negocios','https://images-na.ssl-images-amazon.com/images/I/81rpwgzALfL.jpg',false,'liderazgo')
+ liderazgoCentradoEnPrincpios.setId(liderazgoCentradoEnPrincpios.bookName)
+
+
+
  
 //biografias
 const yoSteveJobs = new books('Yo Steve Jobs','George Beahm', 'Sus inpiradoras e innovadoras ideas en sus propias palabras','https://http2.mlstatic.com/D_NQ_NP_2X_833794-MLA30166326733_042019-F.webp',true,'Biografia')
@@ -100,6 +106,15 @@ const yoSteveJobs = new books('Yo Steve Jobs','George Beahm', 'Sus inpiradoras e
 
 const SteveJobs = new books('Steve Jobs','Walter Isaacson', 'La biografia definitiva de steve Jobs. Esta es la unica biografia escrita con la colaboracion de Jobs','https://images-na.ssl-images-amazon.com/images/I/81VStYnDGrL.jpg',true,'biografia')
 SteveJobs.setId(SteveJobs.bookName)
+
+const quinientas__mujeres = new books('500 mujeres que hicieron historia','Rodolfo C. Taboada','Hay mujeres que dejaron una huella en la historia...','https://http2.mlstatic.com/D_NQ_NP_2X_764672-MLA46345841976_062021-F.webp',true,'Biografia')
+quinientas__mujeres.setId(quinientas__mujeres.bookName)
+
+
+const quinientos__hombres = new books('500 hombres que hicieron historia','Rodolfo C. Taboada','Hay hombres que dejaron una huella en la historia...','https://www.tematika.com/media/catalog/Ilhsa/Imagenes/533807.jpg',false,'Biografia')
+quinientos__hombres.setId(quinientos__hombres.bookName)
+
+
 
 //tecnologia
 const four = new books('Four','Scott Galloway','El adn secreto de Amazon,Apple,Facebook y Google','https://http2.mlstatic.com/D_NQ_NP_2X_988097-MLA46366104100_062021-F.webp',true,'tecnologia')
@@ -152,6 +167,14 @@ const elHombreYsusSimbolos = new books('El hombre y sus simbolos','Carl G. Jung'
 elHombreYsusSimbolos.setId(elHombreYsusSimbolos.bookName)
 
 
+const ElHombreEnBuscaSentido = new books('El hombre en busca del sentido','Viktor Frankl','Es un estremecedor relato en el que vikor Frnakl narra su eexperiencia en los camposd de concentracion','https://m.media-amazon.com/images/I/51Tcd2inwEL._SL500_.jpg',true,'psicologia')
+ElHombreEnBuscaSentido.setId(ElHombreEnBuscaSentido.bookName)
+
+
+
+
+
+
 //empresa
 const laExperienciaDelCliente = new books('La experiencia del cliente','Hugo Brunetta','Este libro es un manual detallado y práctico sobre la administración de la experiencia del cliente desde una perspectiva ciento por ciento real, producto de muchos años de actividad y competencia del autor en consultoría y capacitación. ','img::',true,'empresa') 
 laExperienciaDelCliente.setId(laExperienciaDelCliente.bookName)
@@ -161,8 +184,13 @@ const elEstiloVirgin = new books('El estilo Virgin','Richard Branson','Escuchar,
  const elEstiloVirgin_Id = elEstiloVirgin.id
 
 
-const elModeloToyota = new books('El modelo toyota','Jeffrey K. Liker','Este es un libro el cual habla sobre una excelente filosofia de gestion, muestra como las empresas de servicios ganan valor','img::',true,'empresa')
+const elModeloToyota = new books('El modelo toyota','Jeffrey K. Liker','Este es un libro el cual habla sobre una excelente filosofia de gestion, muestra como las empresas de servicios ganan valor','img::',false,'empresa')
 elModeloToyota.setId(elModeloToyota.bookName)
+
+const Originales = new books('Originales','Adam Grant','Como los inconformes mueven el mundo','https://m.media-amazon.com/images/I/51tXnHCIW2L._SL500_.jpg',true,'empresa')
+Originales.setId(Originales.bookName)
+
+
 
 const nuncaTiresLaToalla = new books('Nunca tires la toalla','Donald Trump','Como converti mis mayores desafios en grandes exitos','img::',false,'empresa')
  nuncaTiresLaToalla.setId(nuncaTiresLaToalla.bookName)
@@ -175,11 +203,25 @@ equiposExtremos.setId(equiposExtremos.bookName)
 
 
 
+//autoAyuda
 
+const chrisGardener = new books('Chris Gardener','Chris Gardener', 'Un libro que te enseña como cambiar de lo imposible a lo posible. Uno de de los mejores libros de autoayuda','https://m.media-amazon.com/images/I/51aJcnRHtsL._SL500_.jpg',true,'autoayuda');
+chrisGardener.setId(chrisGardener.bookName)
 
+const despertandoAlGiganteInterior = new books('Despertando al gigante interior','Anthony Robbins','Un viaje de autodescubrimiento hacia la realizacion personal','https://images-na.ssl-images-amazon.com/images/I/91LAf5CTqTL.jpg',true,'autoayuda');
+despertandoAlGiganteInterior.setId(despertandoAlGiganteInterior.bookName)
+
+const elCaminoDeLaPerfeccion = new books('El camino de la perfeccion','Wayne W. Dyer','Ese libro dirige nuestra mirada hacia nuestro interior,pensamientos que ayudan a mejorar.','https://www.elsotano.com/imagenes_grandes/9786073/978607312716.JPG',true,'autoayuda')
+elCaminoDeLaPerfeccion.setId(elCaminoDeLaPerfeccion.bookName)
+
+const las12PalancasDelExito = new books(' Las 12 palanas del exito','Stephen R. Covey','Nos enseña los principios para lograr una vida plena y feliz','https://www.planetadelibros.com/usuaris/libros/fotos/216/m_libros/portada_las-12-palancas-del-exito_stephen-r-covey_201605271834.jpg',false,'autoayuda')
+las12PalancasDelExito.setId(las12PalancasDelExito.bookName)
+
+const elPoderDeLaIntencion = new books('El poder de ;a intencion','Wayne W. Dyer','Aprende a usar tu intencion para construir una vida plena y feliz','https://pictures.abebooks.com/isbn/9789502803753-us.jpg',false,'autoayuda');
+elPoderDeLaIntencion.setId(elPoderDeLaIntencion.bookName)
 
 
 
 export {nuncaTiresLaToalla_Id, yoSteveJobs_Id, elEstiloVirgin_Id,four_Id}
-export {habitos_para_ser_millonario, yoSteveJobs, como_hacer_que_la_gente_haga_cosas, SteveJobs, four, equiposExtremos,elEstiloVirgin, elModeloToyota, nuncaTiresLaToalla, Propaganda, elHombreYsusSimbolos,laExperienciaDelCliente,loInconciente,innovadoresQueHacenHistoria,elLibroRojo,oceanoAzul,graciasPorLLegarTarde,EstoEsMarketing,pensarRapidoPensarDespacio,padreRicoPadrePobre_RobertKi,elJuegoDelDinero_RobertKi,elToqueDeMildas_RobertKi }
+export {habitos_para_ser_millonario, yoSteveJobs, como_hacer_que_la_gente_haga_cosas, SteveJobs, four, equiposExtremos,elEstiloVirgin, elModeloToyota, nuncaTiresLaToalla, Propaganda, elHombreYsusSimbolos,laExperienciaDelCliente,loInconciente,innovadoresQueHacenHistoria,elLibroRojo,oceanoAzul,graciasPorLLegarTarde,EstoEsMarketing,pensarRapidoPensarDespacio,padreRicoPadrePobre_RobertKi,elJuegoDelDinero_RobertKi,elToqueDeMildas_RobertKi,chrisGardener,despertandoAlGiganteInterior,elCaminoDeLaPerfeccion,las12PalancasDelExito,elPoderDeLaIntencion,Originales,ElHombreEnBuscaSentido,quinientas__mujeres,quinientos__hombres,liderazgoCentradoEnPrincpios}
 

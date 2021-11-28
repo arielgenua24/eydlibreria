@@ -1,12 +1,12 @@
-import {habitos_para_ser_millonario, yoSteveJobs, como_hacer_que_la_gente_haga_cosas, SteveJobs, four, equiposExtremos,elEstiloVirgin, elModeloToyota, nuncaTiresLaToalla, Propaganda, elHombreYsusSimbolos,laExperienciaDelCliente,loInconciente,innovadoresQueHacenHistoria,elLibroRojo,oceanoAzul,graciasPorLLegarTarde,EstoEsMarketing,pensarRapidoPensarDespacio,padreRicoPadrePobre_RobertKi,elJuegoDelDinero_RobertKi,elToqueDeMildas_RobertKi } from './books'
+import {habitos_para_ser_millonario, yoSteveJobs, como_hacer_que_la_gente_haga_cosas, SteveJobs, four, equiposExtremos,elEstiloVirgin, elModeloToyota, nuncaTiresLaToalla, Propaganda, elHombreYsusSimbolos,laExperienciaDelCliente,loInconciente,innovadoresQueHacenHistoria,elLibroRojo,oceanoAzul,graciasPorLLegarTarde,EstoEsMarketing,pensarRapidoPensarDespacio,padreRicoPadrePobre_RobertKi,elJuegoDelDinero_RobertKi,elToqueDeMildas_RobertKi,chrisGardener,despertandoAlGiganteInterior,elCaminoDeLaPerfeccion,las12PalancasDelExito,elPoderDeLaIntencion,Originales,ElHombreEnBuscaSentido,quinientas__mujeres,quinientos__hombres,liderazgoCentradoEnPrincpios} from './books'
 
 
-const books = [habitos_para_ser_millonario, yoSteveJobs, como_hacer_que_la_gente_haga_cosas, SteveJobs, four, equiposExtremos,elEstiloVirgin, elModeloToyota, nuncaTiresLaToalla, Propaganda, elHombreYsusSimbolos,laExperienciaDelCliente,loInconciente,innovadoresQueHacenHistoria,elLibroRojo,oceanoAzul,graciasPorLLegarTarde,EstoEsMarketing,pensarRapidoPensarDespacio,padreRicoPadrePobre_RobertKi,elJuegoDelDinero_RobertKi,elToqueDeMildas_RobertKi]
+const books = [habitos_para_ser_millonario, yoSteveJobs, como_hacer_que_la_gente_haga_cosas, SteveJobs, four, equiposExtremos,elEstiloVirgin, elModeloToyota, nuncaTiresLaToalla, Propaganda, elHombreYsusSimbolos,laExperienciaDelCliente,loInconciente,innovadoresQueHacenHistoria,elLibroRojo,oceanoAzul,graciasPorLLegarTarde,EstoEsMarketing,pensarRapidoPensarDespacio,padreRicoPadrePobre_RobertKi,elJuegoDelDinero_RobertKi,elToqueDeMildas_RobertKi,chrisGardener,despertandoAlGiganteInterior,elCaminoDeLaPerfeccion,las12PalancasDelExito,elPoderDeLaIntencion,Originales,ElHombreEnBuscaSentido,quinientas__mujeres,quinientos__hombres,liderazgoCentradoEnPrincpios]
 
 
 
 let lista = [habitos_para_ser_millonario.id, yoSteveJobs.id, como_hacer_que_la_gente_haga_cosas.id, SteveJobs.id, four.id,equiposExtremos.id,elEstiloVirgin.id, elModeloToyota.id, nuncaTiresLaToalla.id, Propaganda.id, elHombreYsusSimbolos.id
-   ,laExperienciaDelCliente.id,loInconciente.id,innovadoresQueHacenHistoria.id,elLibroRojo.id,oceanoAzul.id,graciasPorLLegarTarde.id,EstoEsMarketing.id,pensarRapidoPensarDespacio.id,padreRicoPadrePobre_RobertKi.id,elJuegoDelDinero_RobertKi.id,elToqueDeMildas_RobertKi.id]
+   ,laExperienciaDelCliente.id,loInconciente.id,innovadoresQueHacenHistoria.id,elLibroRojo.id,oceanoAzul.id,graciasPorLLegarTarde.id,EstoEsMarketing.id,pensarRapidoPensarDespacio.id,padreRicoPadrePobre_RobertKi.id,elJuegoDelDinero_RobertKi.id,elToqueDeMildas_RobertKi.id,chrisGardener.id,despertandoAlGiganteInterior.id,elCaminoDeLaPerfeccion.id,las12PalancasDelExito.id,elPoderDeLaIntencion.id,Originales,ElHombreEnBuscaSentido.id,quinientas__mujeres.id,quinientos__hombres.id,liderazgoCentradoEnPrincpios.id]
 
 
 
@@ -67,7 +67,7 @@ function searchBooks(param:string) {
 
 
 
-   let listaSorted = lista.sort();
+   let listaSorted:any = lista.sort();
 
       function binarySearch(lista:number[],comienzo:number,final:number,objetivo:number):any {
 
