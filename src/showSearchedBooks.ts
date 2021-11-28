@@ -84,6 +84,7 @@ export function showSearchedBooks() {
                 const div__book__buy: any = document.createElement('div')
                 div__book__buy.className = "div__book__buy--fromSearchedBooks"
                 const buttonWhatsapp = document.createElement('a')
+                buttonWhatsapp.className = 'buttonWhatsapp'
                 buttonWhatsapp.href = `https://web.whatsapp.com/send?phone=543512264081?text=Me%20interesa%20el%20libro%20${el.bookName}`
                 buttonWhatsapp.target = '_blank'
                 buttonWhatsapp.textContent = 'Conectar con el vendedor por WhatsApp'

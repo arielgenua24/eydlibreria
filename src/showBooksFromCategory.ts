@@ -7,7 +7,8 @@ export function showBooksFromCategory() {
     const section_categories:any = document.querySelector('.section_categories')
     const section__welcome:any = document.querySelector('.section__welcome')
     const section__knowMinds:any = document.querySelector('.section__knowMinds');
-    const añadidosRecientemente:any = document.querySelector('.añadidosRecientemente')
+    const añadidosRecientemente:any = document.querySelector('.añadidosRecientemente')  
+    const search__button:any = document.querySelector('.search__button')
 
 
     const books_From_category:any = document.createElement('div')

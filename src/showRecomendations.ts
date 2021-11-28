@@ -19,7 +19,7 @@ export function showRecomendations(param:any) {
 
     const h2 = document.createElement('h2')
     h2.textContent = `${el.bookName}`
-    h2.className = 'div__span-fontSize'
+    h2.className = 'div__span-fontSize--fromRecomendations'
     div__book__Container.append(h2)
     console.log(h2)
     
@@ -70,9 +70,10 @@ export function showRecomendations(param:any) {
 
     const div__book__buy: any = document.createElement('div')
     div__book__buy.className = "div__book__buy"
-    const button = document.createElement('button')
-    button.textContent = 'Conectar con el vendedor por WhatsApp'
-    div__book__buy.append(button)
+    const a = document.createElement('a')
+    a.textContent = 'Conectar con el vendedor por WhatsApp'
+    a.href = 'https://web.whatsapp.com/send?phone=543512264081?text=Me%20interesa%20el%20libro%20${el.bookName}'
+    div__book__buy.append(a)
     console.log(div__book__buy)
 
     section__recomendations.append(div__book__Container, div__book__Resume,div__book__buy) 

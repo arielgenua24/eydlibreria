@@ -604,11 +604,16 @@ span {
 
 }
 
+.div__span-fontSize--fromRecomendations {
+    font-size: 21px;
+    margin-top: -91px;
+    margin-bottom: 19px;
+}
 
 
 .div__span-fontSize {
     font-size: 21px;
-    margin-top: -90px;
+    margin-top: 11px;
     margin-bottom: 19px;
 }
 
@@ -920,27 +925,45 @@ span {
     position: absolute;
     justify-content: center;
     border-radius: 5px;
+    box-shadow: 5px 5px 8px 3px #dee1e3;
 }
   
 .div__book__buy--fromCategories > button {
-      width: 170px;
-      height: 40px;
-      background-color: #007afe;          
-      border: none;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 8px;
+    width: 170px;
+    height: 40px;
+    background-color: #007afe;          
+    border: none;
+    color: white;
+     text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    
 }
 
 .div__book__buy--fromSearchedBooks {
     position: relative;
     width: 170px;
     height: 40px;
-    background-color: #007afe;          
+    background-color: #faf8f7;
     border: none;
     color: white;
     text-align: center;
     text-decoration: none;
     border-radius: 8px;
+    margin-top: 77px;
+    box-shadow: 7px 5px 10px 1px #a4a7b345;
 } 
+
+.span__Inquebrantable {
+    margin-left: 6px;
+}
+.button__Inquebrantable {
+    margin-left: -73px;
+}
+
+.span__originales {
+    margin-left: 26px;
+}
+.button__originales {
+    margin-left: -61px;
+}
