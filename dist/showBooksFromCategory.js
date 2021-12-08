@@ -8,6 +8,8 @@ function showBooksFromCategory() {
     const section_categories = document.querySelector('.section_categories');
     const section__welcome = document.querySelector('.section__welcome');
     const section__knowMinds = document.querySelector('.section__knowMinds');
+    const añadidosRecientemente = document.querySelector('.añadidosRecientemente');
+    const search__button = document.querySelector('.search__button');
     const books_From_category = document.createElement('div');
     books_From_category.className = 'books_From_category';
     const books_from_Empresa = booksCategories_1.Empresa.books_From_category;
@@ -47,9 +49,11 @@ function showBooksFromCategory() {
             console.log(paragraph);
             const div__book__buy = document.createElement('div');
             div__book__buy.className = "div__book__buy--fromCategories";
-            const button = document.createElement('button');
-            button.textContent = 'Conectar con el vendedor por WhatsApp';
-            div__book__buy.append(button);
+            const buttonWhatsapp = document.createElement('a');
+            buttonWhatsapp.href = `https://web.whatsapp.com/send?phone=543512264081?text=Me%20interesa%20el%20libro%20${el.bookName}`;
+            buttonWhatsapp.target = '_blank';
+            buttonWhatsapp.textContent = 'Conectar con el vendedor por WhatsApp';
+            div__book__buy.append(buttonWhatsapp);
             console.log(div__book__buy);
             section__books.append(div__book__Container, div__book__Resume, div__book__buy);
             container.push(section__books);
@@ -63,6 +67,7 @@ function showBooksFromCategory() {
         father_node.appendChild(books_From_category);
         father_node.removeChild(section__welcome);
         father_node.removeChild(section__knowMinds);
+        father_node.removeChild(añadidosRecientemente);
     }
     const category__empresa = document.querySelector('.button__categorie--empresa');
     category__empresa.addEventListener('click', () => {

@@ -1,4 +1,4 @@
-import {habitos_para_ser_millonario, yoSteveJobs, como_hacer_que_la_gente_haga_cosas, SteveJobs, four, equiposExtremos,elEstiloVirgin, elModeloToyota, nuncaTiresLaToalla, Propaganda, elHombreYsusSimbolos,laExperienciaDelCliente,loInconciente,innovadoresQueHacenHistoria,elLibroRojo,oceanoAzul,graciasPorLLegarTarde,EstoEsMarketing,pensarRapidoPensarDespacio,padreRicoPadrePobre_RobertKi,elJuegoDelDinero_RobertKi,elToqueDeMildas_RobertKi,chrisGardener,despertandoAlGiganteInterior,elCaminoDeLaPerfeccion,las12PalancasDelExito,elPoderDeLaIntencion,Originales,ElHombreEnBuscaSentido,quinientas__mujeres,quinientos__hombres,liderazgoCentradoEnPrincpios} from './books'
+import {habitos_para_ser_millonario, yoSteveJobs, como_hacer_que_la_gente_haga_cosas, SteveJobs, four, equiposExtremos,elEstiloVirgin, elModeloToyota, nuncaTiresLaToalla, Propaganda, elHombreYsusSimbolos,laExperienciaDelCliente,loInconciente,maestriaEnLiderazgo,innovadoresQueHacenHistoria,elLibroRojo,oceanoAzul,graciasPorLLegarTarde,EstoEsMarketing,pensarRapidoPensarDespacio,padreRicoPadrePobre_RobertKi,elJuegoDelDinero_RobertKi,elToqueDeMildas_RobertKi,chrisGardener,despertandoAlGiganteInterior,elCaminoDeLaPerfeccion,las12PalancasDelExito,elPoderDeLaIntencion,Originales,ElHombreEnBuscaSentido,quinientas__mujeres,quinientos__hombres,liderazgoCentradoEnPrincpios,Resiste,liderDe360,elABCdelCoaching,segundaOportunidad,ElCuadrante,pensamientos,deDrogadictoAExitoso,las48leyesDelPoder} from './books'
 
 
 
@@ -40,30 +40,28 @@ Biografias.addBook([yoSteveJobs, SteveJobs,quinientas__mujeres,quinientos__hombr
 
 
 const Finanzas = new booksCategories('Finanzas',['Dinero','Inversionistas','Riqueza','Libertad financiera'])
-Finanzas.addBook([padreRicoPadrePobre_RobertKi,elJuegoDelDinero_RobertKi,elToqueDeMildas_RobertKi])
+Finanzas.addBook([padreRicoPadrePobre_RobertKi,elJuegoDelDinero_RobertKi,elToqueDeMildas_RobertKi,segundaOportunidad,ElCuadrante])
 
 
 
 
 const liderazgo = new booksCategories('Liderazgo',['Princpios','Networking','Cambios positivos','Coaching','Resistencia','Desafios'])
-liderazgo.addBook([habitos_para_ser_millonario,como_hacer_que_la_gente_haga_cosas,liderazgoCentradoEnPrincpios])
+liderazgo.addBook([habitos_para_ser_millonario,como_hacer_que_la_gente_haga_cosas,liderazgoCentradoEnPrincpios,liderDe360,elABCdelCoaching,las48leyesDelPoder,maestriaEnLiderazgo])
 
 
 
 
 const psicologia = new booksCategories('Psicologia',['Pensamiento','Entendimiento personal','Descubrimiento','Simbologias'])
-psicologia.addBook([pensarRapidoPensarDespacio,elLibroRojo,loInconciente,Propaganda,elHombreYsusSimbolos,ElHombreEnBuscaSentido])
+psicologia.addBook([pensarRapidoPensarDespacio,elLibroRojo,loInconciente,Propaganda,elHombreYsusSimbolos,ElHombreEnBuscaSentido,pensamientos,las48leyesDelPoder])
 
 
 
 
 const autoayuda = new booksCategories('Autoayuda',['Ley de la atraccion','pensamientos positivos','felicidad','vida plena'])
-autoayuda.addBook([chrisGardener,despertandoAlGiganteInterior,elCaminoDeLaPerfeccion,las12PalancasDelExito,elPoderDeLaIntencion])
+autoayuda.addBook([chrisGardener,despertandoAlGiganteInterior,elCaminoDeLaPerfeccion,las12PalancasDelExito,elPoderDeLaIntencion,Resiste,deDrogadictoAExitoso,las48leyesDelPoder])
 
 const marketing = new booksCategories('Marketing',['Ventas','Publicidad','Innovacion','Entendimiento humano','Creacion de oportunidades'])
 marketing.addBook([EstoEsMarketing,oceanoAzul])
-
-
 
 
 const PNL = new booksCategories('PNL',['Mente','Confianza','Habitos positivos','Salud'])

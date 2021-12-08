@@ -10,12 +10,14 @@ function showSearchedBooks() {
     const section_all = document.querySelector('.section_all');
     const section__knowMinds = document.querySelector('.section__knowMinds');
     const books__from__category = document.querySelector('.books_From_category');
+    const añadidosRecientemente = document.querySelector('.añadidosRecientemente');
     function delete_section_explore() {
         father_node.removeChild(section_explore);
         father_node.removeChild(section__welcome);
         father_node.removeChild(section_categories);
         father_node.removeChild(section_all);
         father_node.removeChild(section__knowMinds);
+        father_node.removeChild(añadidosRecientemente);
     }
     const search_section__Container = [];
     const search_section = document.createElement('section');
@@ -47,7 +49,16 @@ function showSearchedBooks() {
             const image = document.createElement('img');
             image.src = `${el.image}`;
             image.className = "image_size";
-            div__searchedBook__Container.append(paragraph, image, div__text__container);
+            const div__book__buy = document.createElement('div');
+            div__book__buy.className = "div__book__buy--fromSearchedBooks";
+            const buttonWhatsapp = document.createElement('a');
+            buttonWhatsapp.className = 'buttonWhatsapp';
+            buttonWhatsapp.href = `https://web.whatsapp.com/send?phone=543512264081?text=Me%20interesa%20el%20libro%20${el.bookName}`;
+            buttonWhatsapp.target = '_blank';
+            buttonWhatsapp.textContent = 'Conectar con el vendedor por WhatsApp';
+            div__book__buy.append(buttonWhatsapp);
+            console.log(div__book__buy);
+            div__searchedBook__Container.append(paragraph, image, div__text__container, div__book__buy);
             console.log(el);
         });
         father_node.appendChild(search_section);
